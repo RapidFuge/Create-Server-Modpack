@@ -2,9 +2,14 @@ name: Release Mods
 
 on:
   push:
-    branches:
-      - main
+    tags:
+      - "v*"
   workflow_dispatch:
+    inputs:
+      tag_name:
+        description: "Tag name for the release"
+        required: true
+        default: "" # Set default tag if needed
 
 jobs:
   build:
@@ -25,34 +30,31 @@ jobs:
           sudo apt-get install -y zip
           python -m pip install toml requests
 
-      - name: Read Pack Version
-        id: read_version
+      - name: Download mods
+        env:
+          CURSEFORGE_API_KEY: ${{ secrets.CURSEFORGE_API_KEY }}
         run: |
-          python -c "import toml; print(toml.load('pack.toml')['version'])" > version.txt
+          mkdir -p mods/client mods/server
+          python download_mods.py
+
+      - name: Create ZIP files
+        run: |
+          zip -r client-mods.zip mods/client
+          zip -r server-mods.zip mods/server
 
       - name: Set Tag Name
         id: set_tag
         run: |
-          VERSION=$(cat version.txt)
-          echo "TAG_NAME=v$VERSION" >> $GITHUB_ENV
-          echo "VERSION=$VERSION" >> $GITHUB_ENV
-
-      - name: Create Tag and Push
-        run: |
-          git config user.name "github-actions"
-          git config user.email "github-actions@github.com"
-          git tag ${{ env.TAG_NAME }}
-          git push origin ${{ env.TAG_NAME }}
-
-      - name: Create Mod Summary File
-        id: create_summary
-        run: |
-          echo "$(cat mod_summary.txt)" > mod_summary_env.txt
+          if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
+            echo "TAG_NAME=${{ github.event.inputs.tag_name }}" >> $GITHUB_ENV
+          else
+            echo "TAG_NAME=${GITHUB_REF#refs/tags/}" >> $GITHUB_ENV
+          fi
 
       - name: Encode Mod Summary
         id: encode_summary
         run: |
-          base64 mod_summary_env.txt > mod_summary_base64.txt
+          base64 mod_summary.txt > mod_summary_base64.txt
 
       - name: Decode and Set Mod Summary Environment Variable
         id: decode_summary
@@ -69,7 +71,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
         with:
           tag_name: ${{ env.TAG_NAME }}
-          release_name: Release ${{ env.VERSION }}
+          release_name: Release ${{ env.TAG_NAME }}
           body: ${{ env.MOD_SUMMARY }}
           draft: false
           prerelease: false
