@@ -5,11 +5,6 @@ on:
     branches:
       - main
   workflow_dispatch:
-    inputs:
-      tag_name:
-        description: "Tag name for the release"
-        required: false
-        default: ""
 
 jobs:
   build:
@@ -30,61 +25,27 @@ jobs:
           sudo apt-get install -y zip
           python -m pip install toml requests
 
-      - name: Read version from pack.toml
-        id: get_version
+      - name: Read Pack Version
+        id: read_version
         run: |
-          python -c "
-          import toml
-          import os
+          python -c "import toml; print(toml.load('pack.toml')['version'])" > version.txt
 
-          # Load the pack.toml file
-          pack = toml.load('pack.toml')
-
-          # Extract the version
-          version = pack['version']
-
-          # Print the version
-          print(f'PACK_VERSION={version}')
-          " > /tmp/version.env
-
-      - name: Set up environment with version
-        id: setup_env
+      - name: Set Tag Name
+        id: set_tag
         run: |
-          echo "PACK_VERSION=$(grep PACK_VERSION /tmp/version.env | cut -d '=' -f2)" >> $GITHUB_ENV
+          VERSION=$(cat version.txt)
+          echo "TAG_NAME=v$VERSION" >> $GITHUB_ENV
+          echo "VERSION=$VERSION" >> $GITHUB_ENV
 
-      - name: Configure Git
+      - name: Create Mod Summary File
+        id: create_summary
         run: |
-          git config --global user.email "action@github.com"
-          git config --global user.name "GitHub Actions"
-
-      - name: List Existing Tags
-        run: |
-          git fetch --tags
-          git tag
-
-      - name: Download mods
-        env:
-          CURSEFORGE_API_KEY: ${{ secrets.CURSEFORGE_API_KEY }}
-        run: |
-          mkdir -p mods/client mods/server
-          python download_mods.py
-
-      - name: Create ZIP files
-        run: |
-          zip -r client-mods.zip mods/client
-          zip -r server-mods.zip mods/server
-
-      - name: Create and Push Git Tag
-        run: |
-          git tag -a ${{ env.PACK_VERSION }} -m "Release ${{ env.PACK_VERSION }}"
-          git push origin ${{ env.PACK_VERSION }}
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          echo "$(cat mod_summary.txt)" > mod_summary_env.txt
 
       - name: Encode Mod Summary
         id: encode_summary
         run: |
-          base64 mod_summary.txt > mod_summary_base64.txt
+          base64 mod_summary_env.txt > mod_summary_base64.txt
 
       - name: Decode and Set Mod Summary Environment Variable
         id: decode_summary
@@ -94,14 +55,21 @@ jobs:
           echo "$MOD_SUMMARY" >> $GITHUB_ENV
           echo "EOF" >> $GITHUB_ENV
 
+      - name: Create Tag
+        id: create_tag
+        uses: gittools/actions/git-tag@v1
+        with:
+          tag: ${{ env.TAG_NAME }}
+          message: "Release ${{ env.VERSION }}"
+
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
         with:
-          tag_name: ${{ env.PACK_VERSION }}
-          release_name: Release ${{ env.PACK_VERSION }}
+          tag_name: ${{ env.TAG_NAME }}
+          release_name: Release ${{ env.VERSION }}
           body: ${{ env.MOD_SUMMARY }}
           draft: false
           prerelease: false
@@ -109,7 +77,7 @@ jobs:
       - name: Upload Release Asset (Client)
         uses: actions/upload-release-asset@v1
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: ./client-mods.zip
@@ -119,7 +87,7 @@ jobs:
       - name: Upload Release Asset (Server)
         uses: actions/upload-release-asset@v1
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: ./server-mods.zip
