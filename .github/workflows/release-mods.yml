@@ -71,8 +71,6 @@ jobs:
 
       - name: Create Git Tag
         id: create_tag
-        env:
-          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
         run: |
           git tag -a ${{ env.PACK_VERSION }} -m "Release ${{ env.PACK_VERSION }}"
           git push https://x-access-token:${{ secrets.PAT_TOKEN }}@github.com/${{ github.repository }} ${{ env.PACK_VERSION }}
