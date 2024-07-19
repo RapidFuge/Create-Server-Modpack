@@ -52,6 +52,11 @@ jobs:
         run: |
           echo "PACK_VERSION=$(grep PACK_VERSION /tmp/version.env | cut -d '=' -f2)" >> $GITHUB_ENV
 
+      - name: Configure Git
+        run: |
+          git config --global user.email "action@github.com"
+          git config --global user.name "GitHub Actions"
+
       - name: Download mods
         env:
           CURSEFORGE_API_KEY: ${{ secrets.CURSEFORGE_API_KEY }}
