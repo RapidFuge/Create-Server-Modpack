@@ -1,0 +1,116 @@
+hash-format = "sha256"
+
+[[files]]
+file = "mods/architectury-api.pw.toml"
+hash = "5438581aa8967b7ce1fd496f02e058b27855ccedef2f5b3dbb197ad41ae3931c"
+metafile = true
+
+[[files]]
+file = "mods/canary.pw.toml"
+hash = "17f1275c22e2e4710cbfc85327e26b946f13b6fb11fedff4e00b0b85d613e61c"
+metafile = true
+
+[[files]]
+file = "mods/create-clockwork.pw.toml"
+hash = "e6c4de3e0896bccf0708caf70834e8f25e2df9d4dd7d64cbc5c7cfe21895a6af"
+metafile = true
+
+[[files]]
+file = "mods/create-connected.pw.toml"
+hash = "b7eb6cfb7817587bf57586e1ba66badd4b75dcf2cdc9efeb6cb8159002ad57b6"
+metafile = true
+
+[[files]]
+file = "mods/create-diesel-generators.pw.toml"
+hash = "3e676ce9e5f19c85d3204035589b4fb95b6ace67b6985432882f3d12d313b7c6"
+metafile = true
+
+[[files]]
+file = "mods/create-enchantment-industry.pw.toml"
+hash = "5a337573260d8df7c01617c10329a856e44870b217670477d1889474a6fb4307"
+metafile = true
+
+[[files]]
+file = "mods/create-goggles.pw.toml"
+hash = "25346b6e200631726b978d2df677cf00d8478e521dc4dae4ab14c983ba93e300"
+metafile = true
+
+[[files]]
+file = "mods/create-liquid-fuel.pw.toml"
+hash = "edcdfa98f5b3e433ee15ecfecd2b1c98ba6fa68bef4eb3888f6f4a91cf6c878f"
+metafile = true
+
+[[files]]
+file = "mods/create-misc-and-things.pw.toml"
+hash = "6e85c8c77bbf92ac09003473bb327029aadc7063dd480849cd33f6c45eed0043"
+metafile = true
+
+[[files]]
+file = "mods/create-steam-n-rails.pw.toml"
+hash = "9ed53127278e6256ec173d6b93587f1423976ac5f02cc77a6010f30f751bb8eb"
+metafile = true
+
+[[files]]
+file = "mods/create-utilities.pw.toml"
+hash = "40a5cce5519447116cae4b672954b20e4041454174bf929151811eeecaac68fb"
+metafile = true
+
+[[files]]
+file = "mods/create.pw.toml"
+hash = "8cd6e0ba62f3f5962a824170bbf52fd502cbfec5b861fb24757e8283dd351fd1"
+metafile = true
+
+[[files]]
+file = "mods/createaddition.pw.toml"
+hash = "deff9107e8fab365e56e2070ae8ccded315b436174e1e2c3467d668fefd37053"
+metafile = true
+
+[[files]]
+file = "mods/extra-disks.pw.toml"
+hash = "97c010c1c95e06b27aed166612baed28f4496c2a48c8b27953d4199da171d5ba"
+metafile = true
+
+[[files]]
+file = "mods/flux-networks.pw.toml"
+hash = "56f04c5afb59f692b6ff25f781a74d1f61505fd72d4ef647861f07c4e6780189"
+metafile = true
+
+[[files]]
+file = "mods/jei.pw.toml"
+hash = "3763adf24dc8f0d44077cb2e8e6b70ec9cae6a85146a309ac5309a2913d92461"
+metafile = true
+
+[[files]]
+file = "mods/kotlin-for-forge.pw.toml"
+hash = "94d853ec0def62adb527aee046f2c4a32127076c2995ea5c29553534544e1c35"
+metafile = true
+
+[[files]]
+file = "mods/refined-storage-addons.pw.toml"
+hash = "7e32cdec2b5078f78d6e366c4c25206aad0a8e1338e9b782cea2eeb9bf533b10"
+metafile = true
+
+[[files]]
+file = "mods/refined-storage.pw.toml"
+hash = "9b0c4fa348c5d3dbba877faa84460269777d7b84e57cfa77db1131fedc4f0dca"
+metafile = true
+
+[[files]]
+file = "mods/rsinfinitybooster.pw.toml"
+hash = "036894df76ee6e26c96cb1553ac7ca138f35c8b98a1eef0289d8e24068f385a9"
+metafile = true
+
+[[files]]
+file = "mods/rubidium.pw.toml"
+hash = "2fe5c063db5622e0e0a56f739230471de2dd26e08ec80d74fb9c5b2afbe67dc3"
+metafile = true
+
+[[files]]
+file = "mods/trackwork.pw.toml"
+hash = "d0763aeba804f0f605f5f08795967ab8ee40b2aeb3146a7262322321b3fe3e8e"
+metafile = true
+
+[[files]]
+file = "mods/valkyrien-skies.pw.toml"
+hash = "94ca0e67e203e1d55585e1c9cc5d4b99f7f11eeb96678ad3b7c30fe7b7e33a65"
+metafile = true
