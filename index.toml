@@ -11,6 +11,16 @@ hash = "17f1275c22e2e4710cbfc85327e26b946f13b6fb11fedff4e00b0b85d613e61c"
 metafile = true
 
 [[files]]
+file = "mods/copycats.pw.toml"
+hash = "ecc0f545d615ce9e1fe41bae54703319997ebc4495f90fd0ec550418aeb4f5be"
+metafile = true
+
+[[files]]
+file = "mods/create-central-kitchen.pw.toml"
+hash = "6d665e7046d1bacacc92a3926d398b0d902465c8de6ad2cfcc91ecdc752ec4f0"
+metafile = true
+
+[[files]]
 file = "mods/create-clockwork.pw.toml"
 hash = "e6c4de3e0896bccf0708caf70834e8f25e2df9d4dd7d64cbc5c7cfe21895a6af"
 metafile = true
@@ -46,8 +56,18 @@ hash = "6e85c8c77bbf92ac09003473bb327029aadc7063dd480849cd33f6c45eed0043"
 metafile = true
 
 [[files]]
+file = "mods/create-power-loader.pw.toml"
+hash = "9ff96c126fc79e0cde4aaaf12f4b170fc2cc507a71c9c98f25bf816c28f79be3"
+metafile = true
+
+[[files]]
 file = "mods/create-steam-n-rails.pw.toml"
 hash = "9ed53127278e6256ec173d6b93587f1423976ac5f02cc77a6010f30f751bb8eb"
+metafile = true
+
+[[files]]
+file = "mods/create-stuff-additions.pw.toml"
+hash = "c006f179f0fde3d2459d5d777f9cca3a5f8b9bfd42e5c9f381ed3fb1349a87d1"
 metafile = true
 
 [[files]]
