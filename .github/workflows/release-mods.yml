@@ -37,6 +37,13 @@ jobs:
           echo "TAG_NAME=v$VERSION" >> $GITHUB_ENV
           echo "VERSION=$VERSION" >> $GITHUB_ENV
 
+      - name: Create Tag and Push
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git tag ${{ env.TAG_NAME }}
+          git push origin ${{ env.TAG_NAME }}
+
       - name: Create Mod Summary File
         id: create_summary
         run: |
@@ -54,13 +61,6 @@ jobs:
           echo "MOD_SUMMARY<<EOF" >> $GITHUB_ENV
           echo "$MOD_SUMMARY" >> $GITHUB_ENV
           echo "EOF" >> $GITHUB_ENV
-
-      - name: Create Tag
-        id: create_tag
-        uses: gittools/actions/git-tag@v1
-        with:
-          tag: ${{ env.TAG_NAME }}
-          message: "Release ${{ env.VERSION }}"
 
       - name: Create Release
         id: create_release
