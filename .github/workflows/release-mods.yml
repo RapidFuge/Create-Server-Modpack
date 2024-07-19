@@ -3,13 +3,13 @@ name: Release Mods
 on:
   push:
     tags:
-      - 'v*'
+      - "v*"
   workflow_dispatch:
     inputs:
       tag_name:
-        description: 'Tag name for the release'
+        description: "Tag name for the release"
         required: true
-        default: '1.0.0'  # Set default tag if needed
+        default: "1.0.0"
 
 jobs:
   build:
@@ -22,7 +22,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
-          python-version: '3.x'
+          python-version: "3.x"
 
       - name: Install dependencies
         run: |
@@ -81,3 +81,26 @@ jobs:
           asset_path: ./server-mods.zip
           asset_name: server-mods.zip
           asset_content_type: application/zip
+
+      - name: Upload Mod Summary
+        uses: actions/upload-artifact@v3
+        with:
+          name: mod-summary
+          path: mod_summary.txt
+
+      - name: Set Release Description
+        id: set_description
+        run: |
+          description=$(cat mod_summary.txt)
+          echo "::set-output name=description::$description"
+
+      - name: Update Release with Description
+        uses: octokit/request-action@v2.x
+        with:
+          route: PATCH /repos/{owner}/{repo}/releases/{release_id}
+          owner: ${{ github.repository_owner }}
+          repo: ${{ github.repository }}
+          release_id: ${{ steps.create_release.outputs.id }}
+          description: ${{ steps.set_description.outputs.description }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
