@@ -57,6 +57,11 @@ jobs:
           git config --global user.email "action@github.com"
           git config --global user.name "GitHub Actions"
 
+      - name: List Existing Tags
+        run: |
+          git fetch --tags
+          git tag
+
       - name: Download mods
         env:
           CURSEFORGE_API_KEY: ${{ secrets.CURSEFORGE_API_KEY }}
@@ -69,8 +74,9 @@ jobs:
           zip -r client-mods.zip mods/client
           zip -r server-mods.zip mods/server
 
-      - name: Create Git Tag
-        id: create_tag
+      - name: Create and Push Git Tag
+        env:
+          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
         run: |
           git tag -a ${{ env.PACK_VERSION }} -m "Release ${{ env.PACK_VERSION }}"
           git push https://x-access-token:${{ secrets.PAT_TOKEN }}@github.com/${{ github.repository }} ${{ env.PACK_VERSION }}
