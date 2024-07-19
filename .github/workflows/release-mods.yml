@@ -51,12 +51,15 @@ jobs:
             echo "TAG_NAME=${GITHUB_REF#refs/tags/}" >> $GITHUB_ENV
           fi
 
-      - name: Read Mod Summary
-        id: read_summary
+      - name: Create Mod Summary File
+        id: create_summary
         run: |
-          echo "MOD_SUMMARY<<EOF" >> $GITHUB_ENV
-          cat mod_summary.txt >> $GITHUB_ENV
-          echo "EOF" >> $GITHUB_ENV
+          echo "$(cat mod_summary.txt)" > mod_summary_env.txt
+
+      - name: Set Mod Summary Environment Variable
+        id: set_mod_summary
+        run: |
+          echo "MOD_SUMMARY=$(cat mod_summary_env.txt)" >> $GITHUB_ENV
 
       - name: Create Release
         id: create_release
