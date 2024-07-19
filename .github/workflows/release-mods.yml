@@ -46,14 +46,17 @@ jobs:
         id: set_tag
         run: |
           if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
-            echo "::set-output name=tag_name::${{ github.event.inputs.tag_name }}"
+            echo "TAG_NAME=${{ github.event.inputs.tag_name }}" >> $GITHUB_ENV
           else
-            echo "::set-output name=tag_name::${GITHUB_REF#refs/tags/}"
+            echo "TAG_NAME=${GITHUB_REF#refs/tags/}" >> $GITHUB_ENV
           fi
 
       - name: Read Mod Summary
         id: read_summary
-        run: echo "::set-output name=mod_summary::$(cat mod_summary.txt)"
+        run: |
+          echo "MOD_SUMMARY<<EOF" >> $GITHUB_ENV
+          cat mod_summary.txt >> $GITHUB_ENV
+          echo "EOF" >> $GITHUB_ENV
 
       - name: Create Release
         id: create_release
@@ -61,9 +64,9 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
         with:
-          tag_name: ${{ steps.set_tag.outputs.tag_name }}
-          release_name: Release ${{ steps.set_tag.outputs.tag_name }}
-          body: ${{ steps.read_summary.outputs.mod_summary }}
+          tag_name: ${{ env.TAG_NAME }}
+          release_name: Release ${{ env.TAG_NAME }}
+          body: ${{ env.MOD_SUMMARY }}
           draft: false
           prerelease: false
 
