@@ -9,7 +9,7 @@ on:
       tag_name:
         description: "Tag name for the release"
         required: true
-        default: "1.0.0"
+        default: "1.0.0" # Set default tag if needed
 
 jobs:
   build:
@@ -51,6 +51,10 @@ jobs:
             echo "::set-output name=tag_name::${GITHUB_REF#refs/tags/}"
           fi
 
+      - name: Read Mod Summary
+        id: read_summary
+        run: echo "::set-output name=mod_summary::$(cat mod_summary.txt)"
+
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
@@ -59,6 +63,7 @@ jobs:
         with:
           tag_name: ${{ steps.set_tag.outputs.tag_name }}
           release_name: Release ${{ steps.set_tag.outputs.tag_name }}
+          body: ${{ steps.read_summary.outputs.mod_summary }}
           draft: false
           prerelease: false
 
@@ -81,26 +86,3 @@ jobs:
           asset_path: ./server-mods.zip
           asset_name: server-mods.zip
           asset_content_type: application/zip
-
-      - name: Upload Mod Summary
-        uses: actions/upload-artifact@v3
-        with:
-          name: mod-summary
-          path: mod_summary.txt
-
-      - name: Set Release Description
-        id: set_description
-        run: |
-          description=$(cat mod_summary.txt)
-          echo "::set-output name=description::$description"
-
-      - name: Update Release with Description
-        uses: octokit/request-action@v2.x
-        with:
-          route: PATCH /repos/{owner}/{repo}/releases/{release_id}
-          owner: ${{ github.repository_owner }}
-          repo: ${{ github.repository }}
-          release_id: ${{ steps.create_release.outputs.id }}
-          description: ${{ steps.set_description.outputs.description }}
-        env:
-          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}

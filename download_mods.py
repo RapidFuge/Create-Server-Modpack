@@ -26,11 +26,7 @@ server_folder = os.path.join(mods_folder, 'server')
 os.makedirs(client_folder, exist_ok=True)
 os.makedirs(server_folder, exist_ok=True)
 
-mod_summary = {
-    'client': [],
-    'server': [],
-    'both': []
-}
+mod_summary = []
 
 # Iterate through each .toml file in the mods folder
 for filename in os.listdir(mods_folder):
@@ -59,20 +55,13 @@ for filename in os.listdir(mods_folder):
         # Categorize the mod based on 'side'
         if mod_side == 'client' or mod_side == 'both':
             shutil.copy(download_path, os.path.join(client_folder, mod_filename))
-            mod_summary['client'].append(mod_name)
         
         if mod_side == 'server' or mod_side == 'both':
             shutil.copy(download_path, os.path.join(server_folder, mod_filename))
-            mod_summary['server'].append(mod_name)
         
-        if mod_side == 'both':
-            mod_summary['both'].append(mod_name)
+        # Append mod information to summary
+        mod_summary.append(f"- {mod_name} ({mod_side})")
 
-# Save mod summary to a file
+# Write mod summary to a file
 with open('mod_summary.txt', 'w') as f:
-    f.write('### Client Mods\n')
-    f.write('\n'.join(f'- {mod}' for mod in mod_summary['client']))
-    f.write('\n\n### Server Mods\n')
-    f.write('\n'.join(f'- {mod}' for mod in mod_summary['server']))
-    f.write('\n\n### Both Client and Server Mods\n')
-    f.write('\n'.join(f'- {mod}' for mod in mod_summary['both']))
+    f.write('\n'.join(mod_summary))
