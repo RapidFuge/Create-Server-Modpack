@@ -33,8 +33,9 @@ jobs:
       - name: Read version from pack.toml
         id: get_version
         run: |
+          python -c "
           import toml
-          import sys
+          import os
 
           # Load the pack.toml file
           pack = toml.load('pack.toml')
@@ -43,11 +44,8 @@ jobs:
           version = pack['version']
 
           # Print the version
-          print(f"PACK_VERSION={version}")
-
-          # Save version to environment file
-          with open('/tmp/version.env', 'w') as f:
-              f.write(f"PACK_VERSION={version}\n")
+          print(f'PACK_VERSION={version}')
+          " > /tmp/version.env
 
       - name: Set up environment with version
         id: setup_env
