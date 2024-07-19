@@ -75,11 +75,11 @@ jobs:
           zip -r server-mods.zip mods/server
 
       - name: Create and Push Git Tag
-        env:
-          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
         run: |
           git tag -a ${{ env.PACK_VERSION }} -m "Release ${{ env.PACK_VERSION }}"
-          git push https://x-access-token:${{ secrets.PAT_TOKEN }}@github.com/${{ github.repository }} ${{ env.PACK_VERSION }}
+          git push origin ${{ env.PACK_VERSION }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Encode Mod Summary
         id: encode_summary
@@ -98,7 +98,7 @@ jobs:
         id: create_release
         uses: actions/create-release@v1
         env:
-          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           tag_name: ${{ env.PACK_VERSION }}
           release_name: Release ${{ env.PACK_VERSION }}
@@ -109,7 +109,7 @@ jobs:
       - name: Upload Release Asset (Client)
         uses: actions/upload-release-asset@v1
         env:
-          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: ./client-mods.zip
@@ -119,7 +119,7 @@ jobs:
       - name: Upload Release Asset (Server)
         uses: actions/upload-release-asset@v1
         env:
-          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: ./server-mods.zip
