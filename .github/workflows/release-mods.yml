@@ -3,8 +3,13 @@ name: Release Mods
 on:
   push:
     tags:
-      - "v*"
+      - 'v*'
   workflow_dispatch:
+    inputs:
+      tag_name:
+        description: 'Tag name for the release'
+        required: true
+        default: '1.0.0'  # Set default tag if needed
 
 jobs:
   build:
@@ -17,7 +22,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
-          python-version: "3.x"
+          python-version: '3.x'
 
       - name: Install dependencies
         run: |
@@ -37,14 +42,23 @@ jobs:
           zip -r client-mods.zip mods/client
           zip -r server-mods.zip mods/server
 
+      - name: Set Tag Name
+        id: set_tag
+        run: |
+          if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
+            echo "::set-output name=tag_name::${{ github.event.inputs.tag_name }}"
+          else
+            echo "::set-output name=tag_name::${GITHUB_REF#refs/tags/}"
+          fi
+
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
         env:
           GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
         with:
-          tag_name: ${{ github.ref }}
-          release_name: Release ${{ github.ref }}
+          tag_name: ${{ steps.set_tag.outputs.tag_name }}
+          release_name: Release ${{ steps.set_tag.outputs.tag_name }}
           draft: false
           prerelease: false
 
