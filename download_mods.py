@@ -1,6 +1,7 @@
 import os
 import toml
 import urllib.request
+import shutil
 import requests
 
 CURSEFORGE_API_KEY = os.getenv('CURSEFORGE_API_KEY')
@@ -51,9 +52,7 @@ for filename in os.listdir(mods_folder):
         
         # Categorize the mod based on 'side'
         if mod_side == 'client' or mod_side == 'both':
-            os.makedirs(client_folder, exist_ok=True)
-            os.rename(download_path, os.path.join(client_folder, mod_filename))
+            shutil.copy(download_path, os.path.join(client_folder, mod_filename))
         
         if mod_side == 'server' or mod_side == 'both':
-            os.makedirs(server_folder, exist_ok=True)
-            os.rename(download_path, os.path.join(server_folder, mod_filename))
+            shutil.copy(download_path, os.path.join(server_folder, mod_filename))
