@@ -1,0 +1,13 @@
+name = "Pretty Pipes"
+filename = "PrettyPipes-1.12.8.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/XExdLWCQ/versions/xu8G2q6R/PrettyPipes-1.12.8.jar"
+hash-format = "sha1"
+hash = "943cff3a08a7750207a92d4459cc64079eb69354"
+
+[update]
+[update.modrinth]
+mod-id = "XExdLWCQ"
+version = "xu8G2q6R"

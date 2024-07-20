@@ -106,6 +106,11 @@ hash = "94d853ec0def62adb527aee046f2c4a32127076c2995ea5c29553534544e1c35"
 metafile = true
 
 [[files]]
+file = "mods/pretty-pipes.pw.toml"
+hash = "21e87ee2ab0fdc3ddb206e1866398fbe072d083cd46e6a1b7a4839e18d7a9e5e"
+metafile = true
+
+[[files]]
 file = "mods/refined-storage-addons.pw.toml"
 hash = "7e32cdec2b5078f78d6e366c4c25206aad0a8e1338e9b782cea2eeb9bf533b10"
 metafile = true

@@ -9,7 +9,7 @@ on:
       tag_name:
         description: "Tag name for the release"
         required: true
-        default: "" # Set default tag if needed
+        default: "v1.0.0" # Set default tag if needed
 
 jobs:
   build:
@@ -42,6 +42,10 @@ jobs:
           zip -r client-mods.zip mods/client
           zip -r server-mods.zip mods/server
 
+      - name: Download Additional Resource Pack
+        run: |
+          wget -O resource-pack.zip "https://i.rapidfuge.xyz/36b9dd.zip"
+
       - name: Set Tag Name
         id: set_tag
         run: |
@@ -49,7 +53,6 @@ jobs:
             echo "TAG_NAME=${{ github.event.inputs.tag_name }}" >> $GITHUB_ENV
           else
             echo "TAG_NAME=${GITHUB_REF#refs/tags/}" >> $GITHUB_ENV
-          fi
 
       - name: Encode Mod Summary
         id: encode_summary
@@ -94,4 +97,14 @@ jobs:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: ./server-mods.zip
           asset_name: server-mods.zip
+          asset_content_type: application/zip
+
+      - name: Upload Release Asset (Resource Pack)
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./resource-pack.zip
+          asset_name: resource-pack.zip
           asset_content_type: application/zip
