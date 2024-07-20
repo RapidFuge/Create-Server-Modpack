@@ -9,7 +9,7 @@ on:
       tag_name:
         description: "Tag name for the release"
         required: true
-        default: "v1.0.0" # Set default tag if needed
+        default: "1.0.0" # Set default tag if needed
 
 jobs:
   build:
@@ -44,7 +44,7 @@ jobs:
 
       - name: Download Additional Resource Pack
         run: |
-          wget -O resource-pack.zip "https://i.rapidfuge.xyz/36b9dd.zip"
+          wget -O resource-pack.zip "https://filebro.com/file/Rapid's-Create-&-Miscellaneous-Resource-Pack.zip"
 
       - name: Set Tag Name
         id: set_tag
@@ -53,6 +53,7 @@ jobs:
             echo "TAG_NAME=${{ github.event.inputs.tag_name }}" >> $GITHUB_ENV
           else
             echo "TAG_NAME=${GITHUB_REF#refs/tags/}" >> $GITHUB_ENV
+          fi
 
       - name: Encode Mod Summary
         id: encode_summary
