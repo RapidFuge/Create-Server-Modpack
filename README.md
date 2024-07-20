@@ -1,8 +1,8 @@
 # Rapid's Create & Miscellaneous ModPack
 A small modpack I made because I was bored and Create is awesome.
 
-Step 1: Download the Client, Server, and Resource Pack (optional) from the [releases](https://github.com/RapidFuge/Create-Server-Modpack/releases/latest) section.
-Step 2: Use MultiMC or Prism Launcher to create a minecraft instance that is 1.18.2 and the most latest Forge launcher or 40.2.4 to newer versions. and import the client mods in the instance.
+Step 1: Download the Client, Server, and Resource Pack (optional) from the [releases](https://github.com/RapidFuge/Create-Server-Modpack/releases/latest) section.<br>
+Step 2: Use MultiMC or Prism Launcher to create a minecraft instance that is 1.18.2 and the most latest Forge launcher or 40.2.4 to newer versions. and import the client mods in the instance.<br>
 Step 3: Use this docker-compose to easily start a minecraft server.
 ```yaml
 services:
