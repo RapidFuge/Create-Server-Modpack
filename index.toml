@@ -106,6 +106,11 @@ hash = "94d853ec0def62adb527aee046f2c4a32127076c2995ea5c29553534544e1c35"
 metafile = true
 
 [[files]]
+file = "mods/open-parties-and-claims.pw.toml"
+hash = "499866a11761d5bb5d5d6c0f8ef4000f7fb19688b3f752c912d337e9d17dfc5c"
+metafile = true
+
+[[files]]
 file = "mods/pretty-pipes.pw.toml"
 hash = "21e87ee2ab0fdc3ddb206e1866398fbe072d083cd46e6a1b7a4839e18d7a9e5e"
 metafile = true
@@ -138,4 +143,9 @@ metafile = true
 [[files]]
 file = "mods/valkyrien-skies.pw.toml"
 hash = "94ca0e67e203e1d55585e1c9cc5d4b99f7f11eeb96678ad3b7c30fe7b7e33a65"
+metafile = true
+
+[[files]]
+file = "mods/xaeros-minimap.pw.toml"
+hash = "9f7c2bb3f55191c51966368ce952ee1d598d3c0ec97bc519a6909ad97e4b0fca"
 metafile = true
