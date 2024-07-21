@@ -1,8 +1,20 @@
 hash-format = "sha256"
 
 [[files]]
+file = ".github/workflows/release-mods.yml"
+hash = "621115ee83f524f650ea33f11e44237c0518a71c15205b950ec33513c9b7020b"
+
+[[files]]
+file = "README.md"
+hash = "d8f7ae46c3bdfc90a5996fb1804da98c091fab2bd65d89ac48168ac27ad753ce"
+
+[[files]]
+file = "download_mods.py"
+hash = "77a4b07019fec5510df1c17b64659570448664dcccb9d1c2efd824e60ab16449"
+
+[[files]]
 file = "mods/architectury-api.pw.toml"
-hash = "5438581aa8967b7ce1fd496f02e058b27855ccedef2f5b3dbb197ad41ae3931c"
+hash = "0d783ed73eeddfc3d994c0a63ff4a6544b30cfc082fcb054143617c8e05f4ee5"
 metafile = true
 
 [[files]]
@@ -12,7 +24,7 @@ metafile = true
 
 [[files]]
 file = "mods/copycats.pw.toml"
-hash = "a5f0a0c9c37bdd6df7bc58d1c0a5ce8569edf88a5623dda2d2f085f432c703d4"
+hash = "06f3ee5711e52ecce17d8f4ac7e94274522b938011cd6be8c5d9814fed99c37d"
 metafile = true
 
 [[files]]
@@ -96,6 +108,21 @@ hash = "56f04c5afb59f692b6ff25f781a74d1f61505fd72d4ef647861f07c4e6780189"
 metafile = true
 
 [[files]]
+file = "mods/ftb-chunks-forge.pw.toml"
+hash = "431d896abe7b713f2d682e38de5c1fa97bb2339bf4a03696ff37503dcbd7963c"
+metafile = true
+
+[[files]]
+file = "mods/ftb-library-forge.pw.toml"
+hash = "d407624e38c852ade10d8bf4de6949bc935d6d7a23079f5602986296c21ac1c6"
+metafile = true
+
+[[files]]
+file = "mods/ftb-teams-forge.pw.toml"
+hash = "05694a12bdb096f0c7f05b48be626c3bdb8c17fd903f6bbd418fd7fcac5c4992"
+metafile = true
+
+[[files]]
 file = "mods/jei.pw.toml"
 hash = "3763adf24dc8f0d44077cb2e8e6b70ec9cae6a85146a309ac5309a2913d92461"
 metafile = true
@@ -103,11 +130,6 @@ metafile = true
 [[files]]
 file = "mods/kotlin-for-forge.pw.toml"
 hash = "94d853ec0def62adb527aee046f2c4a32127076c2995ea5c29553534544e1c35"
-metafile = true
-
-[[files]]
-file = "mods/open-parties-and-claims.pw.toml"
-hash = "499866a11761d5bb5d5d6c0f8ef4000f7fb19688b3f752c912d337e9d17dfc5c"
 metafile = true
 
 [[files]]
@@ -143,9 +165,4 @@ metafile = true
 [[files]]
 file = "mods/valkyrien-skies.pw.toml"
 hash = "94ca0e67e203e1d55585e1c9cc5d4b99f7f11eeb96678ad3b7c30fe7b7e33a65"
-metafile = true
-
-[[files]]
-file = "mods/xaeros-minimap.pw.toml"
-hash = "9f7c2bb3f55191c51966368ce952ee1d598d3c0ec97bc519a6909ad97e4b0fca"
 metafile = true

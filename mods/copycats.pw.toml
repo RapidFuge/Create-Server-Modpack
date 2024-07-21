@@ -1,13 +1,13 @@
 name = "Create: Copycats+"
-filename = "copycats-2.0.4+mc.1.18.2-forge.jar"
+filename = "copycats-2.0.5+mc.1.18.2-forge.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/UT2M39wf/versions/RAE5Qwk9/copycats-2.0.4%2Bmc.1.18.2-forge.jar"
+url = "https://cdn.modrinth.com/data/UT2M39wf/versions/PUbUAHUk/copycats-2.0.5%2Bmc.1.18.2-forge.jar"
 hash-format = "sha1"
-hash = "38cd939cb7a16bb5ae102fccfed937b7c9516613"
+hash = "9f9f34c8c14e7acca7461be346104727142aa97b"
 
 [update]
 [update.modrinth]
 mod-id = "UT2M39wf"
-version = "RAE5Qwk9"
+version = "PUbUAHUk"
