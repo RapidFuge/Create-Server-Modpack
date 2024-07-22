@@ -13,15 +13,16 @@ services:
     ports:
       - "25565:25565"
     environment:
-      MEMORY: 3G
+      MEMORY: 4G
       EULA: "TRUE"
       TYPE: "FORGE"
       VERSION: 1.18.2
       FORGE_VERSION: latest
       MOTD: "Rapid's Create & Miscellaneous Server"
       ENABLE_WHITELIST: true
-      # NOTE: resource-pack.zip and server-mods.zip must be in the same directory as the server directory.
-      RESOURCE_PACK: "./resource-pack.zip"
+      # NOTE: to use a resource pack, you need to input in a LINK and not a FILE PATH.
+      RESOURCE_PACK: "https://i.rapidfuge.xyz/1b0d8b.zip"
+      # NOTE: server-mods.zip must be in the same directory as the server directory.
       MODPACK: "./server-mods.zip"
       CUSTOM_SERVER_PROPERTIES: |
         resource-pack-prompt=true
@@ -41,7 +42,7 @@ services:
   #     PRE_BACKUP_SCRIPT: |
   #       echo "Before backup!"
   #       echo "Also before backup from $$RCON_HOST to $$DEST_DIR"
-  #     POST_BACKUP_SCRIPT_FILE: /post-backup.sh
+  #   # POST_BACKUP_SCRIPT_FILE: /post-backup.sh
   #   volumes:
   #     - ./Actual Server:/data:ro
   #     - ./mc-backups:/backups
