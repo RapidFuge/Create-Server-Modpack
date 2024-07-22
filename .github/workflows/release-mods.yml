@@ -42,10 +42,6 @@ jobs:
           zip -r client-mods.zip mods/client
           zip -r server-mods.zip mods/server
 
-      - name: Download Additional Resource Pack
-        run: |
-          wget -O resource-pack.zip "https://i.rapidfuge.xyz/36b9dd.zip"
-
       - name: Set Tag Name
         id: set_tag
         run: |

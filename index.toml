@@ -58,11 +58,6 @@ hash = "25346b6e200631726b978d2df677cf00d8478e521dc4dae4ab14c983ba93e300"
 metafile = true
 
 [[files]]
-file = "mods/create-liquid-fuel.pw.toml"
-hash = "edcdfa98f5b3e433ee15ecfecd2b1c98ba6fa68bef4eb3888f6f4a91cf6c878f"
-metafile = true
-
-[[files]]
 file = "mods/create-misc-and-things.pw.toml"
 hash = "6e85c8c77bbf92ac09003473bb327029aadc7063dd480849cd33f6c45eed0043"
 metafile = true
