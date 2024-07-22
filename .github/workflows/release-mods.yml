@@ -9,7 +9,7 @@ on:
       tag_name:
         description: "Tag name for the release"
         required: true
-        default: "v1.0.0" # Set default tag if needed
+        default: "1.0.0" # Set default tag if needed
 
 jobs:
   build:
@@ -39,8 +39,8 @@ jobs:
 
       - name: Create ZIP files
         run: |
-          zip -r client-mods.zip mods/client
-          zip -r server-mods.zip mods/server
+          (cd mods/client && zip -r ../../client-mods.zip .)
+          (cd mods/server && zip -r ../../server-mods.zip .)
 
       - name: Set Tag Name
         id: set_tag
