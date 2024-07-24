@@ -123,6 +123,16 @@ hash = "3763adf24dc8f0d44077cb2e8e6b70ec9cae6a85146a309ac5309a2913d92461"
 metafile = true
 
 [[files]]
+file = "mods/journeymap-integration.pw.toml"
+hash = "cf03d9458fa6cf9906b6fd3739e076eb9e06c82600252df00b44a4d2f5d7a4ff"
+metafile = true
+
+[[files]]
+file = "mods/journeymap.pw.toml"
+hash = "3bf7708ec3e6027a27675c963b1c4aef49d35eb81a438262981285a549a23345"
+metafile = true
+
+[[files]]
 file = "mods/kotlin-for-forge.pw.toml"
 hash = "94d853ec0def62adb527aee046f2c4a32127076c2995ea5c29553534544e1c35"
 metafile = true
