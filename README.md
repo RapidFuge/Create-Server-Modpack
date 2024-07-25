@@ -1,13 +1,14 @@
 # Rapid's Create & Miscellaneous ModPack
 A small modpack I made because I was bored and Create is awesome.
 
-Step 1: Download the Client, Server, and Resource Pack (optional) from the [releases](https://github.com/RapidFuge/Create-Server-Modpack/releases/latest) section.<br>
-Step 2: Use MultiMC or Prism Launcher to create a minecraft instance that is 1.18.2 and the most latest Forge launcher or 40.2.4 to newer versions. and import the client mods in the instance.<br>
+Step 1: Download the Client mods, and Resource Pack (optional) from the [releases](https://github.com/RapidFuge/Create-Server-Modpack/releases/latest) section.<br>
+Step 2: Use MultiMC or Prism Launcher to create a minecraft instance that is 1.19.2 and the most latest Forge version. and import the client mods in the instance.<br>
 Step 3: Use this docker-compose to easily start a minecraft server.
 ```yaml
 services:
-  mc:
+  minecraft:
     image: itzg/minecraft-server
+    container_name: minecraft
     tty: true
     stdin_open: true
     ports:
@@ -16,20 +17,20 @@ services:
       MEMORY: 4G
       EULA: "TRUE"
       TYPE: "FORGE"
-      VERSION: 1.18.2
+      VERSION: 1.19.2
       FORGE_VERSION: latest
       MOTD: "Rapid's Create & Miscellaneous Server"
       ENABLE_WHITELIST: true
       # NOTE: to use a resource pack, you need to input in a LINK and not a FILE PATH.
-      RESOURCE_PACK: "https://i.rapidfuge.xyz/1b0d8b.zip"
-      # NOTE: server-mods.zip must be in the same directory as the server directory.
-      MODPACK: "./server-mods.zip"
+      RESOURCE_PACK: "https://github.com/rapidfuge/create-server-modpack/releases/latest/download/resource-pack.zip"
+      # NOTE: server-mods.zip must be in the same directory as the server directory OR a URL LINK.
+      MODPACK: "https://github.com/rapidfuge/create-server-modpack/releases/latest/download/server-mods.zip"
       CUSTOM_SERVER_PROPERTIES: |
         resource-pack-prompt=true
       WHITELIST: |
-        RapidFuge
+        Playername
       OPS: |
-        RapidFuge
+        Playername
     volumes:
       - ./server:/data
 
@@ -44,7 +45,7 @@ services:
   #       echo "Also before backup from $$RCON_HOST to $$DEST_DIR"
   #   # POST_BACKUP_SCRIPT_FILE: /post-backup.sh
   #   volumes:
-  #     - ./Actual Server:/data:ro
+  #     - ./server:/data:ro
   #     - ./mc-backups:/backups
   #     # - ./post-backup.sh:/post-backup.sh:ro
 ```
