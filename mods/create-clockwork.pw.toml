@@ -1,13 +1,13 @@
 name = "Clockwork"
-filename = "clockwork-1.18.2-0.1.16-forge-a0682a9698.jar"
+filename = "clockwork-1.19.2-0.1.16-forge-1c97c03c94.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/84USeAvk/versions/vy3rk7D0/clockwork-1.18.2-0.1.16-forge-a0682a9698.jar"
+url = "https://cdn.modrinth.com/data/84USeAvk/versions/nFXocypA/clockwork-1.19.2-0.1.16-forge-1c97c03c94.jar"
 hash-format = "sha1"
-hash = "9b32a45a09e3bd855c93c6242ac8a2eeccdce228"
+hash = "5440b33fb46831bd481756ba00d2bfb456253fb5"
 
 [update]
 [update.modrinth]
 mod-id = "84USeAvk"
-version = "vy3rk7D0"
+version = "nFXocypA"

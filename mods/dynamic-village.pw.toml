@@ -1,0 +1,13 @@
+name = "Create: Dynamic Village"
+filename = "dynamicvillage-v0.3-1.19.2.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/YCPmkFAm/versions/MxQ9WNdS/dynamicvillage-v0.3-1.19.2.jar"
+hash-format = "sha1"
+hash = "b78f903e53332e79be52e5e928d676c83d1e87af"
+
+[update]
+[update.modrinth]
+mod-id = "YCPmkFAm"
+version = "MxQ9WNdS"

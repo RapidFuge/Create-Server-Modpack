@@ -1,0 +1,13 @@
+name = "Create: Easy Structures"
+filename = "create_easy_structures-0.1.1-1.19.2.jar"
+side = "server"
+
+[download]
+url = "https://cdn.modrinth.com/data/z69Pxatv/versions/zCTUJ6Fa/create_easy_structures-0.1.1-1.19.2.jar"
+hash-format = "sha1"
+hash = "90a377f3ee76fa60e3c133e444cbc0f47da2dee0"
+
+[update]
+[update.modrinth]
+mod-id = "z69Pxatv"
+version = "zCTUJ6Fa"

@@ -1,0 +1,13 @@
+name = "Create Mechanical Spawner"
+filename = "create_mechanical_spawner-1.19.2-0.0.14.e-44.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/T1hmeGi9/versions/T3tNd5nl/create_mechanical_spawner-1.19.2-0.0.14.e-44.jar"
+hash-format = "sha1"
+hash = "937f15bf877b4e93dbf26e448f91a9c3d699b82f"
+
+[update]
+[update.modrinth]
+mod-id = "T1hmeGi9"
+version = "T3tNd5nl"
