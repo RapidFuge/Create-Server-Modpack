@@ -2,11 +2,11 @@ hash-format = "sha256"
 
 [[files]]
 file = ".github/workflows/release-mods.yml"
-hash = "621115ee83f524f650ea33f11e44237c0518a71c15205b950ec33513c9b7020b"
+hash = "c5a7e9eaf6a5e3b85c6d3fe6643c96f82cc13c45768daa5d356fd7b277ef2087"
 
 [[files]]
 file = "README.md"
-hash = "d8f7ae46c3bdfc90a5996fb1804da98c091fab2bd65d89ac48168ac27ad753ce"
+hash = "d09fb0a1b54d9ce62ed01a2bdb633723b9beb895e1979721ccb8f612fdb959ca"
 
 [[files]]
 file = "download_mods.py"
@@ -68,6 +68,11 @@ hash = "9ff96c126fc79e0cde4aaaf12f4b170fc2cc507a71c9c98f25bf816c28f79be3"
 metafile = true
 
 [[files]]
+file = "mods/create-sandpaper-overhaul.pw.toml"
+hash = "c99092b0a4a11217327cfdada93f156ce7fefaf828ed3b03eecd3fd53f80449f"
+metafile = true
+
+[[files]]
 file = "mods/create-steam-n-rails.pw.toml"
 hash = "9ed53127278e6256ec173d6b93587f1423976ac5f02cc77a6010f30f751bb8eb"
 metafile = true
@@ -119,7 +124,7 @@ metafile = true
 
 [[files]]
 file = "mods/jei.pw.toml"
-hash = "3763adf24dc8f0d44077cb2e8e6b70ec9cae6a85146a309ac5309a2913d92461"
+hash = "de79e8615a4d06d01b575fa4ef255fe92e20a308c94769cb3d20612c79c69a9a"
 metafile = true
 
 [[files]]

@@ -1,0 +1,13 @@
+name = "Create: SandPaper Overhaul"
+filename = "create_so-1.4+forge-1.18.2.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/23nOkgI0/versions/FODEnzWc/create_so-1.4%2Bforge-1.18.2.jar"
+hash-format = "sha1"
+hash = "c6fad662da09c4e347ad818d125ab4bc39862b72"
+
+[update]
+[update.modrinth]
+mod-id = "23nOkgI0"
+version = "FODEnzWc"
