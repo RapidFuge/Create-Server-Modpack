@@ -23,6 +23,11 @@ hash = "ad28520b6ef51c069d1d07e00597a2eeb3bf538a1375945bb8a19a5ec799c5ac"
 metafile = true
 
 [[files]]
+file = "mods/better-end-cities-base.pw.toml"
+hash = "179fcec460cec6f44b45dff02a1521bff590b0f9bf7e28891f1091f3b9188ec5"
+metafile = true
+
+[[files]]
 file = "mods/canary.pw.toml"
 hash = "cb66f9704e31a1e58068328943e74c604408cc380a576b396baab69a2dfb14f0"
 metafile = true
@@ -138,6 +143,11 @@ hash = "651b0579e40f5bffdc1e600bb2099170ee3d6c510251bb38ef8ed0b11a48afcf"
 metafile = true
 
 [[files]]
+file = "mods/explorify.pw.toml"
+hash = "2362f0d0bc9c31ff7bf6a0ddab29cf4122f8c381610c8da5e19fa4b6ab7c1b44"
+metafile = true
+
+[[files]]
 file = "mods/extra-disks.pw.toml"
 hash = "2d821cebf9287817564d4c2d8ebf305beec73e2e21a2c431df5b026fd729f7d8"
 metafile = true
@@ -145,6 +155,11 @@ metafile = true
 [[files]]
 file = "mods/flux-networks.pw.toml"
 hash = "d3e5d8756716534280c0bd4c2caddab5691dc0aeb16a23b76634b108dfc7e291"
+metafile = true
+
+[[files]]
+file = "mods/freecam.pw.toml"
+hash = "37649327762254de493c331256b8f8e626813780a3212d0389bdb09ed2715fa8"
 metafile = true
 
 [[files]]
@@ -185,6 +200,16 @@ metafile = true
 [[files]]
 file = "mods/journeymap.pw.toml"
 hash = "d0c3459ff8689bef3131af31c0e8023a9683ebbe9f1d650cff6a4ecb3e169e27"
+metafile = true
+
+[[files]]
+file = "mods/just-zoom.pw.toml"
+hash = "b460f41fbdfc4e3ce419dbd38349ab83837863d740b861dbddc68b28b524393e"
+metafile = true
+
+[[files]]
+file = "mods/konkrete.pw.toml"
+hash = "aa241e1683fe80eee9cb233d2a1685e4ee771f85723db9861c168be584d60c60"
 metafile = true
 
 [[files]]
