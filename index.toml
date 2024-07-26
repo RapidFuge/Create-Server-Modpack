@@ -6,7 +6,7 @@ hash = "c5a7e9eaf6a5e3b85c6d3fe6643c96f82cc13c45768daa5d356fd7b277ef2087"
 
 [[files]]
 file = "README.md"
-hash = "d09fb0a1b54d9ce62ed01a2bdb633723b9beb895e1979721ccb8f612fdb959ca"
+hash = "eaa2621b89a9a939d99056127b216e8df6e11db72e20c1256ed8d04e63611b8c"
 
 [[files]]
 file = "download_mods.py"
@@ -123,6 +123,11 @@ hash = "f33cb1fddc10a8e41fb2c8180f4c320c22e92d9c99f214e536c2a522ed29b0be"
 metafile = true
 
 [[files]]
+file = "mods/dungeons-and-taverns.pw.toml"
+hash = "c3906b5494fc9ff2765c2f9f656153ca0c6101b923a6719ad5df6d58eeace977"
+metafile = true
+
+[[files]]
 file = "mods/dynamic-village.pw.toml"
 hash = "0fa6afa0ca7d4212044c104553112fd815ca8eec90d3e8c2851358d329ab555a"
 metafile = true
@@ -155,6 +160,16 @@ metafile = true
 [[files]]
 file = "mods/ftb-teams-forge.pw.toml"
 hash = "c0405f2f156703f6c5a181c18e96dfdbad8760c04ff3be8c088853c7b14572df"
+metafile = true
+
+[[files]]
+file = "mods/geophilic.pw.toml"
+hash = "80190a487d05dbc2a04925c2b6b3cb5e885f30da4e5559bb6bb34767b44f5694"
+metafile = true
+
+[[files]]
+file = "mods/hearths.pw.toml"
+hash = "fa483664ee3a815dc67581061fe21fec18e731ade740ebceec82fc870f0ba757"
 metafile = true
 
 [[files]]
