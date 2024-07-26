@@ -6,7 +6,7 @@ hash = "c5a7e9eaf6a5e3b85c6d3fe6643c96f82cc13c45768daa5d356fd7b277ef2087"
 
 [[files]]
 file = "README.md"
-hash = "eaa2621b89a9a939d99056127b216e8df6e11db72e20c1256ed8d04e63611b8c"
+hash = "fc51479312a428df095b93d256931f4f1162efc3e1d2c835a377aa69b2c2898a"
 
 [[files]]
 file = "download_mods.py"
@@ -23,11 +23,6 @@ hash = "ad28520b6ef51c069d1d07e00597a2eeb3bf538a1375945bb8a19a5ec799c5ac"
 metafile = true
 
 [[files]]
-file = "mods/better-end-cities-base.pw.toml"
-hash = "179fcec460cec6f44b45dff02a1521bff590b0f9bf7e28891f1091f3b9188ec5"
-metafile = true
-
-[[files]]
 file = "mods/canary.pw.toml"
 hash = "cb66f9704e31a1e58068328943e74c604408cc380a576b396baab69a2dfb14f0"
 metafile = true
@@ -40,11 +35,6 @@ metafile = true
 [[files]]
 file = "mods/create-central-kitchen.pw.toml"
 hash = "20e049c37e64b6a7dc0b08f52130dcea50da847b722d06c6d99430d009f8d657"
-metafile = true
-
-[[files]]
-file = "mods/create-clockwork.pw.toml"
-hash = "6c335dfdb7e28d06b3107ab295925bed301384b3e1e3357e6260f40b44156abd"
 metafile = true
 
 [[files]]
@@ -218,6 +208,21 @@ hash = "94d853ec0def62adb527aee046f2c4a32127076c2995ea5c29553534544e1c35"
 metafile = true
 
 [[files]]
+file = "mods/mes-moogs-end-structures.pw.toml"
+hash = "ccfb28d7f9defa438abaaf791cb65b8871bebf6152c78b15c8f40be874c036ca"
+metafile = true
+
+[[files]]
+file = "mods/mns-moogs-nether-structures.pw.toml"
+hash = "97c01ca17346357a03f03b6926cd07def25be1a310408bcd671c7c2c68a85b3b"
+metafile = true
+
+[[files]]
+file = "mods/moogs-voyager-structures.pw.toml"
+hash = "d9115aab94929c446386d92ee0ca155639072820860dbec4470ce173bc7c8578"
+metafile = true
+
+[[files]]
 file = "mods/pretty-pipes.pw.toml"
 hash = "5a78d00812a3247545ea03e48f23aaa98cd7a51f78082a2d4e9cfa6684a6cb6c"
 metafile = true
@@ -240,9 +245,4 @@ metafile = true
 [[files]]
 file = "mods/rubidium.pw.toml"
 hash = "3c827ff9fbf2b5bd9aaa1eedd0e246fbe15e76307de20098ec4e2f27ee18a415"
-metafile = true
-
-[[files]]
-file = "mods/valkyrien-skies.pw.toml"
-hash = "b3acac24d1589d9b3cc7a6c1e2620acd2250bace2c5172bf7771f649c628a9cc"
 metafile = true
