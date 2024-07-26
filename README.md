@@ -27,6 +27,7 @@ services:
       MODPACK: "https://github.com/rapidfuge/create-server-modpack/releases/latest/download/server-mods.zip"
       CUSTOM_SERVER_PROPERTIES: |
         resource-pack-prompt=true
+        max-tick-time=-1
       WHITELIST: |
         Playername
       OPS: |
