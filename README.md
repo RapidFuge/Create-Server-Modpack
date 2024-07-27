@@ -1,12 +1,14 @@
 # Rapid's Create & Miscellaneous ModPack
+
 A small modpack I made because I was bored and Create is awesome.
 
-There is a possibility that you may need 5GB of ram to run the modpack. But you may experiment with 4GB. I also recommend a good enough processor to handle the server.
+I recommend a good enough processor to handle the server and AT MINIMUM 5GB of ram allocated to the server.
 I also recommend using a shader. [Complementary Shaders - Reimagined](https://modrinth.com/shader/complementary-reimagined) is a good shader that I recommend.
 
 Step 1: Download the Client mods, and Resource Pack (optional) from the [releases](https://github.com/RapidFuge/Create-Server-Modpack/releases/latest) section.<br>
 Step 2: Use MultiMC or Prism Launcher to create a minecraft instance that is 1.19.2 and the most latest Forge version. and import the client mods in the instance.<br>
 Step 3: Use this docker-compose to easily start a minecraft server.
+
 ```yaml
 services:
   minecraft:
@@ -17,7 +19,7 @@ services:
     ports:
       - "25565:25565"
     environment:
-      MEMORY: 4G
+      MEMORY: 5G
       EULA: "TRUE"
       TYPE: "FORGE"
       VERSION: 1.19.2
@@ -53,4 +55,5 @@ services:
   #     - ./mc-backups:/backups
   #     # - ./post-backup.sh:/post-backup.sh:ro
 ```
+
 Then just do the command <code>docker-compose up -d</code> To start the server!

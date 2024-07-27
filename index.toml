@@ -6,7 +6,7 @@ hash = "c5a7e9eaf6a5e3b85c6d3fe6643c96f82cc13c45768daa5d356fd7b277ef2087"
 
 [[files]]
 file = "README.md"
-hash = "fc51479312a428df095b93d256931f4f1162efc3e1d2c835a377aa69b2c2898a"
+hash = "c8a4ddceb466f638af10ef6831fe1afa25b063ac76cd3de9ea8f465e4be98ec4"
 
 [[files]]
 file = "download_mods.py"
@@ -20,6 +20,11 @@ metafile = true
 [[files]]
 file = "mods/bellsandwhistles.pw.toml"
 hash = "ad28520b6ef51c069d1d07e00597a2eeb3bf538a1375945bb8a19a5ec799c5ac"
+metafile = true
+
+[[files]]
+file = "mods/botarium.pw.toml"
+hash = "43ab72fc2e411fcdd964452542fa951f285a577f006c648b84ea99a99aacba80"
 metafile = true
 
 [[files]]
@@ -75,6 +80,11 @@ metafile = true
 [[files]]
 file = "mods/create-more-automation.pw.toml"
 hash = "b5be1fe40c9302047496317d0cae0aad0d23984d4d947db3d7c3d2080a998d9f"
+metafile = true
+
+[[files]]
+file = "mods/create-new-age.pw.toml"
+hash = "0add695cf2e1925e5dd9c68969c7ab6324911dc9028453072e285b4bcfb7bcb6"
 metafile = true
 
 [[files]]
@@ -168,6 +178,11 @@ hash = "c0405f2f156703f6c5a181c18e96dfdbad8760c04ff3be8c088853c7b14572df"
 metafile = true
 
 [[files]]
+file = "mods/hammer-lib.pw.toml"
+hash = "6f7e6b9d7ddb8a7ed6f3f95285ab1b1e320a8322688daa1fe77797b5adba6a1b"
+metafile = true
+
+[[files]]
 file = "mods/incendium.pw.toml"
 hash = "38277c071e79128e516e6f83322775dfd2324a21c4812453e02067b23e3f3b09"
 metafile = true
@@ -193,6 +208,11 @@ hash = "b460f41fbdfc4e3ce419dbd38349ab83837863d740b861dbddc68b28b524393e"
 metafile = true
 
 [[files]]
+file = "mods/konkrete.pw.toml"
+hash = "aa241e1683fe80eee9cb233d2a1685e4ee771f85723db9861c168be584d60c60"
+metafile = true
+
+[[files]]
 file = "mods/kotlin-for-forge.pw.toml"
 hash = "94d853ec0def62adb527aee046f2c4a32127076c2995ea5c29553534544e1c35"
 metafile = true
@@ -200,6 +220,11 @@ metafile = true
 [[files]]
 file = "mods/nullscape.pw.toml"
 hash = "eb9e018bcea14732b53ca4678593c1e9f7bab63cc11f8bba497475bf975c20be"
+metafile = true
+
+[[files]]
+file = "mods/oculus.pw.toml"
+hash = "5e3c1bece72d73338583e26b5018819b10eada276ebc07af41d1417f7f8d8d0e"
 metafile = true
 
 [[files]]
@@ -225,6 +250,11 @@ metafile = true
 [[files]]
 file = "mods/rubidium.pw.toml"
 hash = "3c827ff9fbf2b5bd9aaa1eedd0e246fbe15e76307de20098ec4e2f27ee18a415"
+metafile = true
+
+[[files]]
+file = "mods/simple-quarry.pw.toml"
+hash = "befc56ba634fac0d10ecb070b1e10b45ca73d6cd56b165d51557320891c4ddbc"
 metafile = true
 
 [[files]]
