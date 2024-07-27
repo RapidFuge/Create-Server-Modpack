@@ -26,10 +26,10 @@ services:
       FORGE_VERSION: latest
       MOTD: "Rapid's Create & Miscellaneous Server"
       ENABLE_WHITELIST: true
-      # NOTE: to use a resource pack, you need to input in a LINK and not a FILE PATH.
-      RESOURCE_PACK: "https://github.com/rapidfuge/create-server-modpack/releases/latest/download/resource-pack.zip"
+      # NOTE: to use a resource pack, you need to input in a LINK and not a FILE PATH. Don't know about this one yet.
+      # RESOURCE_PACK: "https://github.com/rapidfuge/create-server-modpack/releases/latest/download/resource-pack.zip"
       # NOTE: server-mods.zip must be in the same directory as the server directory OR a URL LINK.
-      MODPACK: "https://github.com/rapidfuge/create-server-modpack/releases/latest/download/server-mods.zip"
+      MODPACK: "https://rapidfuge.github.io/Create-Server-Modpack/pack.toml"
       CUSTOM_SERVER_PROPERTIES: |
         resource-pack-prompt=true
         max-tick-time=-1
