@@ -5,9 +5,11 @@ A small modpack I made because I was bored and Create is awesome.
 I recommend a good enough processor to handle the server and AT MINIMUM 5GB of ram allocated to the server.
 I also recommend using a shader. [Complementary Shaders - Reimagined](https://modrinth.com/shader/complementary-reimagined) is a good shader that I recommend.
 
-Step 1: Download the Client mods, and Resource Pack (optional) from the [releases](https://github.com/RapidFuge/Create-Server-Modpack/releases/latest) section.<br>
-Step 2: Use MultiMC or Prism Launcher to create a minecraft instance that is 1.19.2 and the most latest Forge version. and import the client mods in the instance.<br>
-Step 3: Use this docker-compose to easily start a minecraft server.
+Step 1: Create a Latest version Forge 1.19.2 Instance<br>
+Step 2: Download [Packwiz Installer](https://github.com/packwiz/packwiz-installer-bootstrap/releases)<br>
+Step 3: Edit Instance -> Settings -> Custom Commands, Check the Custom Commands checkbox and paste this in the pre-launch command textbox <code>"$INST_JAVA" -jar $INST_DIR/packwiz-installer-bootstrap.jar https://rapidfuge.github.io/Create-Server-Modpack//pack.toml</code><br>
+Step 2: Press launch and profit.<br>
+Step 3: Use this docker-compose to easily start a minecraft server.<br>
 
 ```yaml
 services:
@@ -26,13 +28,8 @@ services:
       FORGE_VERSION: latest
       MOTD: "Rapid's Create & Miscellaneous Server"
       ENABLE_WHITELIST: true
-      # NOTE: to use a resource pack, you need to input in a LINK and not a FILE PATH. Don't know about this one yet.
-      # RESOURCE_PACK: "https://github.com/rapidfuge/create-server-modpack/releases/latest/download/resource-pack.zip"
-      # NOTE: server-mods.zip must be in the same directory as the server directory OR a URL LINK.
       MODPACK: "https://rapidfuge.github.io/Create-Server-Modpack/pack.toml"
-      CUSTOM_SERVER_PROPERTIES: |
-        resource-pack-prompt=true
-        max-tick-time=-1
+      # If you wish to use a whitelist in the server
       WHITELIST: |
         Playername
       OPS: |

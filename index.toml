@@ -1,6 +1,10 @@
 hash-format = "sha256"
 
 [[files]]
+file = ".github/workflows/jekyll-gh-pages.yml"
+hash = "3e9c30b39b55ab79fec1e7c9fa92b1fb931865c263534450fe9880e3384070be"
+
+[[files]]
 file = "mods/architectury-api.pw.toml"
 hash = "3bea0442d74ad9116aa556afd0b84b54ecfd9504af3dabd914c829728082a34c"
 metafile = true
@@ -323,9 +327,4 @@ metafile = true
 [[files]]
 file = "resourcepacks/fresh-animations.pw.toml"
 hash = "7878f5d233c73d9e22d54c7765e68b9227103ae88cb5c1e8bf1c99d2505d8f9e"
-metafile = true
-
-[[files]]
-file = "resourcepacks/sparkles.pw.toml"
-hash = "162cd7bbd954a7e0d95d8da0ccb37f3c59b920837a3a5b437e288e241bdf4acd"
 metafile = true
