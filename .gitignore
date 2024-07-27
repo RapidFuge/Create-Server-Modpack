@@ -3,6 +3,3 @@
 
 # Exclude exported Modrinth modpacks
 *.mrpack
-
-# But not ignore the resource pack
-!resource-pack.zip

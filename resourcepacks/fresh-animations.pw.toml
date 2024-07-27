@@ -1,0 +1,13 @@
+name = "Fresh Animations"
+filename = "FreshAnimations_v1.8.zip"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/50dA9Sha/versions/WhoErU2P/FreshAnimations_v1.8.zip"
+hash-format = "sha1"
+hash = "653f1532b1585f1062b082811d515d2df987accf"
+
+[update]
+[update.modrinth]
+mod-id = "50dA9Sha"
+version = "WhoErU2P"

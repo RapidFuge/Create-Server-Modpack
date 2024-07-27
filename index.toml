@@ -1,18 +1,6 @@
 hash-format = "sha256"
 
 [[files]]
-file = ".github/workflows/release-mods.yml"
-hash = "c5a7e9eaf6a5e3b85c6d3fe6643c96f82cc13c45768daa5d356fd7b277ef2087"
-
-[[files]]
-file = "README.md"
-hash = "c8a4ddceb466f638af10ef6831fe1afa25b063ac76cd3de9ea8f465e4be98ec4"
-
-[[files]]
-file = "download_mods.py"
-hash = "77a4b07019fec5510df1c17b64659570448664dcccb9d1c2efd824e60ab16449"
-
-[[files]]
 file = "mods/architectury-api.pw.toml"
 hash = "3bea0442d74ad9116aa556afd0b84b54ecfd9504af3dabd914c829728082a34c"
 metafile = true
@@ -315,4 +303,29 @@ metafile = true
 [[files]]
 file = "mods/yungs-extras.pw.toml"
 hash = "83558bc364b0fc0a7da3807c4899889cbbf1a05bbcf2e60aded258695638ba68"
+metafile = true
+
+[[files]]
+file = "resourcepacks/create-darkmode.pw.toml"
+hash = "686370b79b5e37941a426405c1293e32b6ce69cfe39eb8cf356303e329256504"
+metafile = true
+
+[[files]]
+file = "resourcepacks/create-storage.pw.toml"
+hash = "1be3bbc5b5406e0d1f3810c120630e8e2ad5c9bcb766666dc0e7f773b914a7fc"
+metafile = true
+
+[[files]]
+file = "resourcepacks/default-dark-mode.pw.toml"
+hash = "8cc8d32efa2177bda8e8e680029f1062592fd841d906506d6718a1fca54be04d"
+metafile = true
+
+[[files]]
+file = "resourcepacks/fresh-animations.pw.toml"
+hash = "7878f5d233c73d9e22d54c7765e68b9227103ae88cb5c1e8bf1c99d2505d8f9e"
+metafile = true
+
+[[files]]
+file = "resourcepacks/sparkles.pw.toml"
+hash = "162cd7bbd954a7e0d95d8da0ccb37f3c59b920837a3a5b437e288e241bdf4acd"
 metafile = true

@@ -1,0 +1,13 @@
+name = "CreateStorage"
+filename = "CreateStorage.zip"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/AhFS3w0T/versions/2vR0Nmkj/CreateStorage.zip"
+hash-format = "sha1"
+hash = "360d2926d059a25f5eccaf22b672d5847081e05d"
+
+[update]
+[update.modrinth]
+mod-id = "AhFS3w0T"
+version = "2vR0Nmkj"
