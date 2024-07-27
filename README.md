@@ -6,7 +6,7 @@ I recommend a good enough processor to handle the server and AT MINIMUM 5GB of r
 I also recommend using a shader. [Complementary Shaders - Reimagined](https://modrinth.com/shader/complementary-reimagined) is a good shader that I recommend.
 
 Step 1: Create a Latest version Forge 1.19.2 Instance<br>
-Step 2: Download [Packwiz Installer](https://github.com/packwiz/packwiz-installer-bootstrap/releases)<br>
+Step 2: Download [Packwiz Installer](https://github.com/packwiz/packwiz-installer-bootstrap/releases) and place it on you instance folder.<br>
 Step 3: Edit Instance -> Settings -> Custom Commands, Check the Custom Commands checkbox and paste this in the pre-launch command textbox <code>"$INST_JAVA" -jar $INST_DIR/packwiz-installer-bootstrap.jar https://rapidfuge.github.io/Create-Server-Modpack//pack.toml</code><br>
 Step 2: Press launch and profit.<br>
 Step 3: Use this docker-compose to easily start a minecraft server.<br>
