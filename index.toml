@@ -1,6 +1,36 @@
 hash-format = "sha256"
 
 [[files]]
+file = "datapacks/repurposed-structures-better-desert-temples-compat.pw.toml"
+hash = "d8d6dd310cc92d308db3a442442f84927ca5267f56488c1f4b59c18e2748640f"
+metafile = true
+
+[[files]]
+file = "datapacks/repurposed-structures-better-dungeons-compat.pw.toml"
+hash = "090d34c4b3aa77fd11eacea4ea2ba002752af676a98de65d2f965add7262244a"
+metafile = true
+
+[[files]]
+file = "datapacks/repurposed-structures-better-jungle-temples.pw.toml"
+hash = "c0b2ab2b5cbd5ed19a95bc8522925bd9cef97fd303f269a6c76515fd4f5de390"
+metafile = true
+
+[[files]]
+file = "datapacks/repurposed-structures-better-ocean-monuments-compat.pw.toml"
+hash = "31be6fb1517d90150e595dd46ed4168dc362af8efe9e1a6b2ee1c4cb0a6d6e29"
+metafile = true
+
+[[files]]
+file = "datapacks/repurposed-structures-better-strongholds-compat.pw.toml"
+hash = "31357651d409b1b9906dd5db07e1bffdbdb496b98aa68234e37885ea08f71590"
+metafile = true
+
+[[files]]
+file = "datapacks/repurposed-structures-better-witch-huts-compat.pw.toml"
+hash = "9b6ec6ed49f137aa14075bb049a41b1148ae82efb89313c5d235ce5e51ac5d32"
+metafile = true
+
+[[files]]
 file = "mods/architectury-api.pw.toml"
 hash = "3bea0442d74ad9116aa556afd0b84b54ecfd9504af3dabd914c829728082a34c"
 metafile = true
@@ -33,6 +63,11 @@ metafile = true
 [[files]]
 file = "mods/copycats.pw.toml"
 hash = "d4c281001696ba4c1f306e0c74546193c70f8fab50222672884efbbeef923c8a"
+metafile = true
+
+[[files]]
+file = "mods/crafting+.pw.toml"
+hash = "726ccaa1484ec99e9a67cb095391442780db9672de0f4de0b6231566107c45c3"
 metafile = true
 
 [[files]]
@@ -142,7 +177,7 @@ metafile = true
 
 [[files]]
 file = "mods/dynamic-village.pw.toml"
-hash = "0fa6afa0ca7d4212044c104553112fd815ca8eec90d3e8c2851358d329ab555a"
+hash = "2878ddf8f6b0fa8b92f60ca4db9fb7211c90c4b2f788cf3175091abc7019c8d4"
 metafile = true
 
 [[files]]
@@ -201,6 +236,16 @@ hash = "6f7e6b9d7ddb8a7ed6f3f95285ab1b1e320a8322688daa1fe77797b5adba6a1b"
 metafile = true
 
 [[files]]
+file = "mods/hopo-better-ruined-portals.pw.toml"
+hash = "2941c2c44ff73711b1a15047cfd6a2ff20cca40985e90928e1121c600d49072f"
+metafile = true
+
+[[files]]
+file = "mods/hopo-better-underwater-ruins.pw.toml"
+hash = "f12595dcd11943630ca85f6b09548d57e7f2df05e298b5d165136323926b5842"
+metafile = true
+
+[[files]]
 file = "mods/incendium.pw.toml"
 hash = "38277c071e79128e516e6f83322775dfd2324a21c4812453e02067b23e3f3b09"
 metafile = true
@@ -241,6 +286,11 @@ hash = "01a057038ff0001c216ed30504059aa681151010aa9b2810214e166de1da61a8"
 metafile = true
 
 [[files]]
+file = "mods/nbc.pw.toml"
+hash = "297cf6b10cf9951c3bdfbfe0a11d293c10ef05029a4ba95cdc811ab23ce854d7"
+metafile = true
+
+[[files]]
 file = "mods/no-chat-reports.pw.toml"
 hash = "9055b4a92e2ea4ad8661c226f549040eb48ae535070942a3a95b019c08ca70f6"
 metafile = true
@@ -271,6 +321,16 @@ hash = "0160cf6eda610a4408e9746211b418e969b951ee900b2ba9ad18c3c444f68eae"
 metafile = true
 
 [[files]]
+file = "mods/remove-terralith-intro-message.pw.toml"
+hash = "352bbd75887df2d8c2c181255a27d6aebc78dd52ee867c85a317a4e2b83a49fd"
+metafile = true
+
+[[files]]
+file = "mods/repurposed-structures-forge.pw.toml"
+hash = "c2c2f1e2bcbaa10f56d4755b8ed0358e2777f0a80b43fa63204e555bf9be450f"
+metafile = true
+
+[[files]]
 file = "mods/rsinfinitybooster.pw.toml"
 hash = "4dd34589e5e67aa417d9af301267f344ba19f591efc43562bacec27f57c8e26c"
 metafile = true
@@ -288,6 +348,11 @@ metafile = true
 [[files]]
 file = "mods/terralith.pw.toml"
 hash = "970bd250c0bbd6ce0249c6e5bde09adabda4969e13ead743f684549b31beaace"
+metafile = true
+
+[[files]]
+file = "mods/tool-trims.pw.toml"
+hash = "ad02971d04139cac48731235a02604a88038c2b10ee845f3de018fff97fbbe3d"
 metafile = true
 
 [[files]]
