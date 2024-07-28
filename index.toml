@@ -1,10 +1,6 @@
 hash-format = "sha256"
 
 [[files]]
-file = ".github/workflows/jekyll-gh-pages.yml"
-hash = "3e9c30b39b55ab79fec1e7c9fa92b1fb931865c263534450fe9880e3384070be"
-
-[[files]]
 file = "mods/architectury-api.pw.toml"
 hash = "3bea0442d74ad9116aa556afd0b84b54ecfd9504af3dabd914c829728082a34c"
 metafile = true
@@ -22,6 +18,11 @@ metafile = true
 [[files]]
 file = "mods/canary.pw.toml"
 hash = "cb66f9704e31a1e58068328943e74c604408cc380a576b396baab69a2dfb14f0"
+metafile = true
+
+[[files]]
+file = "mods/collective.pw.toml"
+hash = "b1fd6e846b55d997d34de078bb850e4ddd76817a93cff2b50ae000388f8123cf"
 metafile = true
 
 [[files]]
@@ -125,6 +126,11 @@ hash = "2104479f2534504ccbcd9d815d22d1e69bfdfdbdf6d85192f3570978bf11b239"
 metafile = true
 
 [[files]]
+file = "mods/dynamic-lights.pw.toml"
+hash = "d9968d6500c4052633307714bdb3044ae29deefdc1548c6aba16fa36e5697e22"
+metafile = true
+
+[[files]]
 file = "mods/dynamic-village.pw.toml"
 hash = "0fa6afa0ca7d4212044c104553112fd815ca8eec90d3e8c2851358d329ab555a"
 metafile = true
@@ -132,6 +138,11 @@ metafile = true
 [[files]]
 file = "mods/easy-villagers.pw.toml"
 hash = "651b0579e40f5bffdc1e600bb2099170ee3d6c510251bb38ef8ed0b11a48afcf"
+metafile = true
+
+[[files]]
+file = "mods/explorers-compass.pw.toml"
+hash = "5d31747b69a3c0fc9ac7971020ca2a2247619a422ffcf4d7a5f2b6f650ec1aa1"
 metafile = true
 
 [[files]]
@@ -210,6 +221,11 @@ hash = "94d853ec0def62adb527aee046f2c4a32127076c2995ea5c29553534544e1c35"
 metafile = true
 
 [[files]]
+file = "mods/natures-compass.pw.toml"
+hash = "01a057038ff0001c216ed30504059aa681151010aa9b2810214e166de1da61a8"
+metafile = true
+
+[[files]]
 file = "mods/nullscape.pw.toml"
 hash = "eb9e018bcea14732b53ca4678593c1e9f7bab63cc11f8bba497475bf975c20be"
 metafile = true
@@ -257,6 +273,16 @@ metafile = true
 [[files]]
 file = "mods/towns-and-towers.pw.toml"
 hash = "2e878466d1ea07ac7c9c7f827801f38aed23b9cd6a27a47312f98022d8d4a090"
+metafile = true
+
+[[files]]
+file = "mods/tree-harvester.pw.toml"
+hash = "4e40fe442965cdc1b6a54c89b2bfa31369145044bb2f00c7ae9b00c0acf95f34"
+metafile = true
+
+[[files]]
+file = "mods/veinminer.pw.toml"
+hash = "1e7c52e8200d178f66c84026d54dccf0fe75f862b725088325672049c336caca"
 metafile = true
 
 [[files]]
