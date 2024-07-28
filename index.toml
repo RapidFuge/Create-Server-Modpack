@@ -6,6 +6,11 @@ hash = "3bea0442d74ad9116aa556afd0b84b54ecfd9504af3dabd914c829728082a34c"
 metafile = true
 
 [[files]]
+file = "mods/balm.pw.toml"
+hash = "117028aee504fb12600efb5bff26e8a3ee13d472ebe7e209ee122112b98fdb8e"
+metafile = true
+
+[[files]]
 file = "mods/bellsandwhistles.pw.toml"
 hash = "ad28520b6ef51c069d1d07e00597a2eeb3bf538a1375945bb8a19a5ec799c5ac"
 metafile = true
@@ -126,6 +131,11 @@ hash = "2104479f2534504ccbcd9d815d22d1e69bfdfdbdf6d85192f3570978bf11b239"
 metafile = true
 
 [[files]]
+file = "mods/ctov-waystone-compat.pw.toml"
+hash = "4c572863449a8e8355870f80cc1ac419845250463b8df43243951f5feaeab461"
+metafile = true
+
+[[files]]
 file = "mods/dynamic-lights.pw.toml"
 hash = "d9968d6500c4052633307714bdb3044ae29deefdc1548c6aba16fa36e5697e22"
 metafile = true
@@ -133,6 +143,11 @@ metafile = true
 [[files]]
 file = "mods/dynamic-village.pw.toml"
 hash = "0fa6afa0ca7d4212044c104553112fd815ca8eec90d3e8c2851358d329ab555a"
+metafile = true
+
+[[files]]
+file = "mods/easy-tpa.pw.toml"
+hash = "3aa8a97f20a47e1fef87a817af082246a1404cb1911c96c914970f479092b3a2"
 metafile = true
 
 [[files]]
@@ -226,6 +241,11 @@ hash = "01a057038ff0001c216ed30504059aa681151010aa9b2810214e166de1da61a8"
 metafile = true
 
 [[files]]
+file = "mods/no-chat-reports.pw.toml"
+hash = "9055b4a92e2ea4ad8661c226f549040eb48ae535070942a3a95b019c08ca70f6"
+metafile = true
+
+[[files]]
 file = "mods/nullscape.pw.toml"
 hash = "eb9e018bcea14732b53ca4678593c1e9f7bab63cc11f8bba497475bf975c20be"
 metafile = true
@@ -283,6 +303,16 @@ metafile = true
 [[files]]
 file = "mods/veinminer.pw.toml"
 hash = "1e7c52e8200d178f66c84026d54dccf0fe75f862b725088325672049c336caca"
+metafile = true
+
+[[files]]
+file = "mods/waystones-teleport-pets.pw.toml"
+hash = "ca3f590bbfed192b4e9eff9796fe3264c36d526d64021728643d508e22c120b0"
+metafile = true
+
+[[files]]
+file = "mods/waystones.pw.toml"
+hash = "45951d2101d05815db6dec9940bff29ab8429d98e74d53d72cf2c7a61c360668"
 metafile = true
 
 [[files]]
