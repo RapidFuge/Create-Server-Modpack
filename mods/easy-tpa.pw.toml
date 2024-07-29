@@ -1,6 +1,6 @@
 name = "TPA"
 filename = "tpa-1.4.1-1.19.2.jar"
-side = "server"
+side = "both"
 
 [download]
 url = "https://cdn.modrinth.com/data/pbGzLSUN/versions/C4oW0Hrz/tpa-1.4.1-1.19.2.jar"
