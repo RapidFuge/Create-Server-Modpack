@@ -28,7 +28,7 @@ services:
       FORGE_VERSION: latest
       MOTD: "Rapid's Create & Miscellaneous Server"
       ENABLE_WHITELIST: true
-      MODPACK: "https://rapidfuge.github.io/Create-Server-Modpack/pack.toml"
+      PACKWIZ_URL: "https://rapidfuge.github.io/Create-Server-Modpack/pack.toml"
       # If you wish to use a whitelist in the server
       WHITELIST: |
         Playername
