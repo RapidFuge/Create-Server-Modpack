@@ -12,6 +12,7 @@ Step 2: Press launch and profit.<br>
 Step 3: Use this docker-compose to easily start a minecraft server.<br>
 
 ```yaml
+version: "3.8"
 services:
   minecraft:
     image: itzg/minecraft-server
@@ -28,7 +29,7 @@ services:
       FORGE_VERSION: latest
       MOTD: "Rapid's Create & Miscellaneous Server"
       ENABLE_WHITELIST: true
-      PACKWIZ_URL: "https://rapidfuge.github.io/Create-Server-Modpack/pack.toml"
+      PACKWIZ_URL: "https://git.rapidfuge.xyz/RapidFuge/Create-Server-Modpack/raw/branch/main/pack.toml"
       # If you wish to use a whitelist in the server
       WHITELIST: |
         Playername
