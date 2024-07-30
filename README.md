@@ -22,7 +22,7 @@ services:
     ports:
       - "25565:25565"
     environment:
-      MEMORY: 5G
+      MEMORY: 4G
       EULA: "TRUE"
       TYPE: "FORGE"
       VERSION: 1.19.2
