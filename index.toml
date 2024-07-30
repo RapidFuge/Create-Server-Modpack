@@ -1,32 +1,42 @@
 hash-format = "sha256"
 
 [[files]]
-file = "datapacks/repurposed-structures-better-desert-temples-compat.pw.toml"
+file = "configs/global_packs/required_data/ibo.pw.toml"
+hash = "a8d03018754a6b1c6c3af4dcb49f7b4090ac798a347890a835198535ab9e146c"
+metafile = true
+
+[[files]]
+file = "configs/global_packs/required_data/repurposed-structures-better-desert-temples-compat.pw.toml"
 hash = "d8d6dd310cc92d308db3a442442f84927ca5267f56488c1f4b59c18e2748640f"
 metafile = true
 
 [[files]]
-file = "datapacks/repurposed-structures-better-dungeons-compat.pw.toml"
+file = "configs/global_packs/required_data/repurposed-structures-better-dungeons-compat.pw.toml"
 hash = "090d34c4b3aa77fd11eacea4ea2ba002752af676a98de65d2f965add7262244a"
 metafile = true
 
 [[files]]
-file = "datapacks/repurposed-structures-better-jungle-temples.pw.toml"
+file = "configs/global_packs/required_data/repurposed-structures-better-jungle-temples.pw.toml"
 hash = "c0b2ab2b5cbd5ed19a95bc8522925bd9cef97fd303f269a6c76515fd4f5de390"
 metafile = true
 
 [[files]]
-file = "datapacks/repurposed-structures-better-ocean-monuments-compat.pw.toml"
+file = "configs/global_packs/required_data/repurposed-structures-better-nether-fortress-compat.pw.toml"
+hash = "bcecbbb85c3ed5d45752e337d408119ab3615630d643b6b91ac726cbc90a456b"
+metafile = true
+
+[[files]]
+file = "configs/global_packs/required_data/repurposed-structures-better-ocean-monuments-compat.pw.toml"
 hash = "31be6fb1517d90150e595dd46ed4168dc362af8efe9e1a6b2ee1c4cb0a6d6e29"
 metafile = true
 
 [[files]]
-file = "datapacks/repurposed-structures-better-strongholds-compat.pw.toml"
+file = "configs/global_packs/required_data/repurposed-structures-better-strongholds-compat.pw.toml"
 hash = "31357651d409b1b9906dd5db07e1bffdbdb496b98aa68234e37885ea08f71590"
 metafile = true
 
 [[files]]
-file = "datapacks/repurposed-structures-better-witch-huts-compat.pw.toml"
+file = "configs/global_packs/required_data/repurposed-structures-better-witch-huts-compat.pw.toml"
 hash = "9b6ec6ed49f137aa14075bb049a41b1148ae82efb89313c5d235ce5e51ac5d32"
 metafile = true
 
@@ -231,6 +241,11 @@ hash = "c0405f2f156703f6c5a181c18e96dfdbad8760c04ff3be8c088853c7b14572df"
 metafile = true
 
 [[files]]
+file = "mods/globalpacks.pw.toml"
+hash = "815e791734f676dfacbb49ccb954624afdfbc72b44125855b99d181f9a1d1793"
+metafile = true
+
+[[files]]
 file = "mods/hammer-lib.pw.toml"
 hash = "6f7e6b9d7ddb8a7ed6f3f95285ab1b1e320a8322688daa1fe77797b5adba6a1b"
 metafile = true
@@ -403,6 +418,11 @@ metafile = true
 [[files]]
 file = "mods/yungs-better-mineshafts.pw.toml"
 hash = "20ee43d489b8ab802bcfdb9d0a503b8f9fa1e4482e078664e1f3e9201d1af54c"
+metafile = true
+
+[[files]]
+file = "mods/yungs-better-nether-fortresses.pw.toml"
+hash = "edc2a536158f0a5feeb9823ee45c9217445bf8eb59516d3f13f26d5b114a507a"
 metafile = true
 
 [[files]]

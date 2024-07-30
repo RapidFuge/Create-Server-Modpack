@@ -1,0 +1,13 @@
+name = "Incendium Biomes Only"
+filename = "incendium_biomes_only.zip"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/gmUU3UdW/versions/2FAN2y3w/incendium_biomes_only.zip"
+hash-format = "sha1"
+hash = "2219d2d33deeeec91b0243e769694ebc7f48c78c"
+
+[update]
+[update.modrinth]
+mod-id = "gmUU3UdW"
+version = "2FAN2y3w"
