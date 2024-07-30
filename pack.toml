@@ -1,16 +1,16 @@
 name = "Rapid's Create & Miscellaneous ModPack"
 author = "RapidFuge"
-version = "1.2.2"
+version = "1.2.3"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "fbc941cb9d972ff897e5cac99ed6e0601e5711a831a959b6bfc047cb9e213ee4"
+hash = "dddbfc202ca603ddaabceca95ee0536d4c88d2700f1412701b57b64485237772"
 
 [versions]
 forge = "43.4.2"
 minecraft = "1.19.2"
 
 [options]
-datapack-folder = "world/datapacks"
+datapack-folder = "config/paxi/datapacks"
