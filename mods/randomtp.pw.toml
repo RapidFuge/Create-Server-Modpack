@@ -1,0 +1,13 @@
+name = "RandomTP"
+filename = "randomtp-7.1.0+1.19-forge.jar"
+side = "server"
+
+[download]
+url = "https://cdn.modrinth.com/data/rfrPFqYK/versions/FD8uuDws/randomtp-7.1.0%2B1.19-forge.jar"
+hash-format = "sha1"
+hash = "e80a544424cfe5490007a50514f804a2676af9f6"
+
+[update]
+[update.modrinth]
+mod-id = "rfrPFqYK"
+version = "FD8uuDws"

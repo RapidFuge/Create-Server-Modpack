@@ -61,6 +61,10 @@ hash = "7878f5d233c73d9e22d54c7765e68b9227103ae88cb5c1e8bf1c99d2505d8f9e"
 metafile = true
 
 [[files]]
+file = "config/squarry.cfg"
+hash = "3a17c7d51760ffed4a7f6aeea80118b4725a135f57946f57325ef722eef31cad"
+
+[[files]]
 file = "mods/architectury-api.pw.toml"
 hash = "3bea0442d74ad9116aa556afd0b84b54ecfd9504af3dabd914c829728082a34c"
 metafile = true
@@ -86,6 +90,16 @@ hash = "cb66f9704e31a1e58068328943e74c604408cc380a576b396baab69a2dfb14f0"
 metafile = true
 
 [[files]]
+file = "mods/chunky.pw.toml"
+hash = "d42a44515e657e67431cb042727db14f697b6d80c88c1da5fbe4c8afce738d29"
+metafile = true
+
+[[files]]
+file = "mods/cloth-config.pw.toml"
+hash = "fe2b1cb8e815ed0fb5fbc46cb808411237f1694dce52f87242a1798fffcfc558"
+metafile = true
+
+[[files]]
 file = "mods/collective.pw.toml"
 hash = "b1fd6e846b55d997d34de078bb850e4ddd76817a93cff2b50ae000388f8123cf"
 metafile = true
@@ -98,6 +112,11 @@ metafile = true
 [[files]]
 file = "mods/crafting+.pw.toml"
 hash = "726ccaa1484ec99e9a67cb095391442780db9672de0f4de0b6231566107c45c3"
+metafile = true
+
+[[files]]
+file = "mods/craftpresence.pw.toml"
+hash = "ac15b3de29ae3b57e1fe8f1bf084ca5a38725fab1134f1d9e5203ae4f491916c"
 metafile = true
 
 [[files]]
@@ -201,6 +220,11 @@ hash = "4c572863449a8e8355870f80cc1ac419845250463b8df43243951f5feaeab461"
 metafile = true
 
 [[files]]
+file = "mods/double-doors.pw.toml"
+hash = "855381cd08b917e117744f9c8cf6ea3e1c5057df68a038449315cf8d083adb62"
+metafile = true
+
+[[files]]
 file = "mods/dynamic-lights.pw.toml"
 hash = "d9968d6500c4052633307714bdb3044ae29deefdc1548c6aba16fa36e5697e22"
 metafile = true
@@ -233,6 +257,11 @@ metafile = true
 [[files]]
 file = "mods/extra-disks.pw.toml"
 hash = "2d821cebf9287817564d4c2d8ebf305beec73e2e21a2c431df5b026fd729f7d8"
+metafile = true
+
+[[files]]
+file = "mods/fast-ip-ping.pw.toml"
+hash = "67869c191f60b81034d43c5b2bd07a93d4d6434fba586b0f8e4d155d88b5c03a"
 metafile = true
 
 [[files]]
@@ -281,6 +310,16 @@ hash = "38277c071e79128e516e6f83322775dfd2324a21c4812453e02067b23e3f3b09"
 metafile = true
 
 [[files]]
+file = "mods/jade-addons-forge.pw.toml"
+hash = "c11011cc9fb5bd521e5805e732dd131357ae8fb21f682a7ab2db4aa8ad9a0e41"
+metafile = true
+
+[[files]]
+file = "mods/jade.pw.toml"
+hash = "77197d1980dbae42a4bd5dce2cc5c162c9487e46178e3a528bb82fb136c18243"
+metafile = true
+
+[[files]]
 file = "mods/jei.pw.toml"
 hash = "1e49c7f73a324ef470784dadec1bc35c3ec3d06fb035bada6716c559b90343b4"
 metafile = true
@@ -308,6 +347,11 @@ metafile = true
 [[files]]
 file = "mods/kotlin-for-forge.pw.toml"
 hash = "94d853ec0def62adb527aee046f2c4a32127076c2995ea5c29553534544e1c35"
+metafile = true
+
+[[files]]
+file = "mods/lootr.pw.toml"
+hash = "cac7d39a77f5ff5782dc2d68f7f422b8aea932e19eaa66572771443310d83eb9"
 metafile = true
 
 [[files]]
@@ -346,6 +390,11 @@ hash = "5a78d00812a3247545ea03e48f23aaa98cd7a51f78082a2d4e9cfa6684a6cb6c"
 metafile = true
 
 [[files]]
+file = "mods/randomtp.pw.toml"
+hash = "ba1a9a10f6d6ac01f2cff17f195d8f868cbf86cb77deeee841003c59453f0704"
+metafile = true
+
+[[files]]
 file = "mods/refined-storage-addons.pw.toml"
 hash = "ced16dd96e4f655adabbfe81d44d5012d2ddbe26e94a688fc04bd9d7eb83e116"
 metafile = true
@@ -376,6 +425,11 @@ hash = "3c827ff9fbf2b5bd9aaa1eedd0e246fbe15e76307de20098ec4e2f27ee18a415"
 metafile = true
 
 [[files]]
+file = "mods/shulkerboxtooltip.pw.toml"
+hash = "34ab9d5f597076dad44f564ad6a44352bcdc7c548b140dd37592954b8d221728"
+metafile = true
+
+[[files]]
 file = "mods/simple-quarry.pw.toml"
 hash = "befc56ba634fac0d10ecb070b1e10b45ca73d6cd56b165d51557320891c4ddbc"
 metafile = true
@@ -383,6 +437,11 @@ metafile = true
 [[files]]
 file = "mods/terralith.pw.toml"
 hash = "970bd250c0bbd6ce0249c6e5bde09adabda4969e13ead743f684549b31beaace"
+metafile = true
+
+[[files]]
+file = "mods/toms-storage.pw.toml"
+hash = "3befd4c44272e3c6b3e486434bc15d13093c68f5bf0ed7a0344ddbddacea051b"
 metafile = true
 
 [[files]]
