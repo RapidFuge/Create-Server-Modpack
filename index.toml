@@ -260,11 +260,6 @@ hash = "2d821cebf9287817564d4c2d8ebf305beec73e2e21a2c431df5b026fd729f7d8"
 metafile = true
 
 [[files]]
-file = "mods/fast-ip-ping.pw.toml"
-hash = "67869c191f60b81034d43c5b2bd07a93d4d6434fba586b0f8e4d155d88b5c03a"
-metafile = true
-
-[[files]]
 file = "mods/flux-networks.pw.toml"
 hash = "d3e5d8756716534280c0bd4c2caddab5691dc0aeb16a23b76634b108dfc7e291"
 metafile = true
