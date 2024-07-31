@@ -62,7 +62,7 @@ metafile = true
 
 [[files]]
 file = "config/squarry.cfg"
-hash = "3a17c7d51760ffed4a7f6aeea80118b4725a135f57946f57325ef722eef31cad"
+hash = "f0ae3d70cfffe99d50c13bdf085821e192419c3c1dfdd61f53d2d5f14d3ce694"
 
 [[files]]
 file = "mods/architectury-api.pw.toml"
