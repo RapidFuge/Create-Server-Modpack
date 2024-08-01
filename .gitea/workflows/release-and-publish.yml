@@ -16,6 +16,13 @@ jobs:
       - name: Install jq
         run: sudo apt-get update && sudo apt-get install -y jq
 
+      - name: Extract version from pack.toml
+        id: extract_version
+        run: |
+          version=$(grep '^version' pack.toml | cut -d '"' -f2)
+          echo "VERSION=$version" >> $GITHUB_ENV
+          echo "Extracted version: $version"  # Debugging output
+
       - name: Check if release exists
         id: check_release
         env:
@@ -51,7 +58,7 @@ jobs:
         uses: akkuman/gitea-release-action@v1
         with:
           tag_name: "v${{ env.VERSION }}"
-          release_name: "Rapid's Create & Miscellaneous ModPack v${{ env.VERSION }}"
+          name: "Rapid's Create & Miscellaneous ModPack v${{ env.VERSION }}"
           token: ${{ secrets.GITEA_TOKEN }}
           files: |
             rapids-create-misc-modpack.mrpack
