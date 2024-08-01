@@ -32,10 +32,10 @@ jobs:
       - name: Check if release exists
         id: check_release
         env:
-          GITEA_TOKEN: ${{ secrets.GITEA_TOKEN }}
+          GITEA_TOKEN: ${{ secrets.GITEATOKEN }}
           VERSION: ${{ steps.extract_version.outputs.VERSION }}
         run: |
-          response=$(curl -s -H "Authorization: token $GITEA_TOKEN" "https://git.rapidfuge.xyz/api/v1/repos/RapidFuge/Create-Server-Modpack/releases/tags/v$VERSION")
+          response=$(curl -s -H "Authorization: token $GITEATOKEN" "https://git.rapidfuge.xyz/api/v1/repos/RapidFuge/Create-Server-Modpack/releases/tags/v$VERSION")
           if [[ $(echo $response | jq -r '.message') == "The target couldn'\''t be found." ]]; then
             echo "release_exists=false" >> $GITHUB_ENV
           else
@@ -52,21 +52,21 @@ jobs:
         if: env.release_exists == 'false'
         id: create_release
         env:
-          GITEA_TOKEN: ${{ secrets.GITEA_TOKEN }}
+          GITEA_TOKEN: ${{ secrets.GITEATOKEN }}
           VERSION: ${{ steps.extract_version.outputs.VERSION }}
         run: |
           release_data=$(jq -n --arg tag "v${VERSION}" --arg name "Rapid's Create & Miscellaneous ModPack v${VERSION}" '{"tag_name":$tag,"name":$name,"body":"Automated release"}')
-          response=$(curl -s -X POST "https://git.rapidfuge.xyz/api/v1/repos/RapidFuge/Create-Server-Modpack/releases" -H "Content-Type: application/json" -H "Authorization: token $GITEA_TOKEN" -d "$release_data")
+          response=$(curl -s -X POST "https://git.rapidfuge.xyz/api/v1/repos/RapidFuge/Create-Server-Modpack/releases" -H "Content-Type: application/json" -H "Authorization: token $GITEATOKEN" -d "$release_data")
           echo $response | jq -r '.id' > release_id.txt
 
       - name: Upload .mrpack file to Gitea release
         if: env.release_exists == 'false'
         env:
-          GITEA_TOKEN: ${{ secrets.GITEA_TOKEN }}
+          GITEA_TOKEN: ${{ secrets.GITEATOKEN }}
         run: |
           release_id=$(cat release_id.txt)
           curl -X POST "https://git.rapidfuge.xyz/api/v1/repos/RapidFuge/Create-Server-Modpack/releases/$release_id/assets?name=rapids-create-misc-modpack.mrpack" \
-          -H "Authorization: token $GITEA_TOKEN" \
+          -H "Authorization: token $GITEATOKEN" \
           -F "file=@rapids-create-misc-modpack.mrpack"
 
     # - name: Upload to Modrinth
