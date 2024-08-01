@@ -42,6 +42,11 @@ jobs:
             echo "release_exists=true" >> $GITHUB_ENV
           fi
 
+      - name: Export modpack to Modrinth
+        if: env.release_exists == 'false'
+        run: |
+        packwiz modrinth export -o rapids-create-misc-modpack.mrpack
+
       - name: Create release in Gitea
         if: env.release_exists == 'false'
         id: create_release
