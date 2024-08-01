@@ -44,8 +44,9 @@ jobs:
 
       - name: Export modpack to Modrinth
         if: env.release_exists == 'false'
+        id: export_modpack
         run: |
-        packwiz modrinth export -o rapids-create-misc-modpack.mrpack
+          packwiz modrinth export -o rapids-create-misc-modpack.mrpack
 
       - name: Create release in Gitea
         if: env.release_exists == 'false'
