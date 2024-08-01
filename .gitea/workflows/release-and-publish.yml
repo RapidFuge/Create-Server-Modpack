@@ -27,6 +27,7 @@ jobs:
         id: extract_version
         run: |
           version=$(grep '^version' pack.toml | cut -d '"' -f2)
+          echo "Modpack version is $version"
           echo "VERSION=$version" >> $GITHUB_ENV
 
       - name: Check if release exists
@@ -35,6 +36,7 @@ jobs:
           GITEA_TOKEN: ${{ secrets.GITEA_TOKEN }}
           VERSION: ${{ steps.extract_version.outputs.VERSION }}
         run: |
+          echo "Attempting to see if the release version $VERSION exists."
           response=$(curl -s -H "Authorization: token $GITEA_TOKEN" "https://git.rapidfuge.xyz/api/v1/repos/RapidFuge/Create-Server-Modpack/releases/tags/v$VERSION")
           echo "API response: $response"
           if [[ $(echo $response | jq -r '.message') == "The target couldn't be found." ]]; then
