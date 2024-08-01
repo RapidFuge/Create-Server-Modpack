@@ -27,18 +27,18 @@ jobs:
         id: extract_version
         run: |
           version=$(grep '^version' pack.toml | cut -d '"' -f2)
-          echo "Modpack version is $version"
           echo "VERSION=$version" >> $GITHUB_ENV
+          echo "Extracted version: $version" # Debug output
 
       - name: Check if release exists
         id: check_release
         env:
           GITEA_TOKEN: ${{ secrets.GITEA_TOKEN }}
-          VERSION: ${{ steps.extract_version.outputs.VERSION }}
+          VERSION: ${{ env.VERSION }}
         run: |
-          echo "Attempting to see if the release version $VERSION exists."
+          echo "Checking release for version: $VERSION" # Debug output
           response=$(curl -s -H "Authorization: token $GITEA_TOKEN" "https://git.rapidfuge.xyz/api/v1/repos/RapidFuge/Create-Server-Modpack/releases/tags/v$VERSION")
-          echo "API response: $response"
+          echo "API response: $response" # Debug output
           if [[ $(echo $response | jq -r '.message') == "The target couldn't be found." ]]; then
             echo "Release does not exist."
             echo "release_exists=false" >> $GITHUB_ENV
@@ -49,7 +49,6 @@ jobs:
 
       - name: Export modpack to Modrinth
         if: env.release_exists == 'false'
-        id: export_modpack
         run: |
           packwiz modrinth export -o rapids-create-misc-modpack.mrpack
 
@@ -58,8 +57,9 @@ jobs:
         id: create_release
         env:
           GITEA_TOKEN: ${{ secrets.GITEA_TOKEN }}
-          VERSION: ${{ steps.extract_version.outputs.VERSION }}
+          VERSION: ${{ env.VERSION }}
         run: |
+          echo "Creating release for version: $VERSION" # Debug output
           release_data=$(jq -n --arg tag "v${VERSION}" --arg name "Rapid's Create & Miscellaneous ModPack v${VERSION}" '{"tag_name":$tag,"name":$name,"body":"Automated release"}')
           response=$(curl -s -X POST "https://git.rapidfuge.xyz/api/v1/repos/RapidFuge/Create-Server-Modpack/releases" -H "Content-Type: application/json" -H "Authorization: token $GITEA_TOKEN" -d "$release_data")
           echo $response | jq -r '.id' > release_id.txt
@@ -70,28 +70,29 @@ jobs:
           GITEA_TOKEN: ${{ secrets.GITEA_TOKEN }}
         run: |
           release_id=$(cat release_id.txt)
+          echo "Uploading .mrpack file to release ID: $release_id" # Debug output
           curl -X POST "https://git.rapidfuge.xyz/api/v1/repos/RapidFuge/Create-Server-Modpack/releases/$release_id/assets?name=rapids-create-misc-modpack.mrpack" \
           -H "Authorization: token $GITEA_TOKEN" \
           -F "file=@rapids-create-misc-modpack.mrpack"
 
-    # - name: Upload to Modrinth
-    #   if: env.release_exists == 'false'
-    #   env:
-    #     MODRINTH_TOKEN: ${{ secrets.MODRINTH_TOKEN }}
-    #     VERSION: ${{ steps.extract_version.outputs.VERSION }}
-    #   run: |
-    #     curl -X POST https://api.modrinth.com/v2/version \
-    #     -H "Authorization: Bearer $MODRINTH_TOKEN" \
-    #     -H "Content-Type: application/json" \
-    #     -d '{
-    #       "name": "Rapid'\''s Create & Miscellaneous ModPack - '"$VERSION"'",
-    #       "version_number": "'"$VERSION"'",
-    #       "changelog": "Automated release",
-    #       "dependencies": [],
-    #       "files": [
-    #         {
-    #           "url": "https://path-to-your-file/rapids-create-misc-modpack.mrpack",
-    #           "filename": "rapids-create-misc-modpack.mrpack"
-    #         }
-    #       ]
-    #     }'
+      - name: Upload to Modrinth
+        env:
+          MODRINTH_TOKEN: ${{ secrets.MODRINTH_TOKEN }}
+          VERSION: ${{ env.VERSION }}
+        run: |
+          echo "Uploading to Modrinth with version: $VERSION" # Debug output
+          curl -X POST https://api.modrinth.com/v2/version \
+          -H "Authorization: Bearer $MODRINTH_TOKEN" \
+          -H "Content-Type: application/json" \
+          -d '{
+            "name": "Rapid'\''s Create & Miscellaneous ModPack - '"$VERSION"'",
+            "version_number": "'"$VERSION"'",
+            "changelog": "Automated release",
+            "dependencies": [],
+            "files": [
+              {
+                "url": "https://path-to-your-file/rapids-create-misc-modpack.mrpack",
+                "filename": "rapids-create-misc-modpack.mrpack"
+              }
+            ]
+          }'
