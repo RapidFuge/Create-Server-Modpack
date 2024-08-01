@@ -73,26 +73,27 @@ jobs:
           echo "Uploading .mrpack file to release ID: $release_id" # Debug output
           curl -X POST "https://git.rapidfuge.xyz/api/v1/repos/RapidFuge/Create-Server-Modpack/releases/$release_id/assets?name=rapids-create-misc-modpack.mrpack" \
           -H "Authorization: token $GITEA_TOKEN" \
-          -F "file=@rapids-create-misc-modpack.mrpack"
+          -F "file=@rapids-create-misc-modpack.mrpack" \
+          --verbose # Debug output
 
-      - name: Upload to Modrinth
-        env:
-          MODRINTH_TOKEN: ${{ secrets.MODRINTH_TOKEN }}
-          VERSION: ${{ env.VERSION }}
-        run: |
-          echo "Uploading to Modrinth with version: $VERSION" # Debug output
-          curl -X POST https://api.modrinth.com/v2/version \
-          -H "Authorization: Bearer $MODRINTH_TOKEN" \
-          -H "Content-Type: application/json" \
-          -d '{
-            "name": "Rapid'\''s Create & Miscellaneous ModPack - '"$VERSION"'",
-            "version_number": "'"$VERSION"'",
-            "changelog": "Automated release",
-            "dependencies": [],
-            "files": [
-              {
-                "url": "https://path-to-your-file/rapids-create-misc-modpack.mrpack",
-                "filename": "rapids-create-misc-modpack.mrpack"
-              }
-            ]
-          }'
+      # - name: Upload to Modrinth
+      #   env:
+      #     MODRINTH_TOKEN: ${{ secrets.MODRINTH_TOKEN }}
+      #     VERSION: ${{ env.VERSION }}
+      #   run: |
+      #     echo "Uploading to Modrinth with version: $VERSION" # Debug output
+      #     curl -X POST https://api.modrinth.com/v2/version \
+      #     -H "Authorization: Bearer $MODRINTH_TOKEN" \
+      #     -H "Content-Type: application/json" \
+      #     -d '{
+      #       "name": "Rapid'\''s Create & Miscellaneous ModPack - '"$VERSION"'",
+      #       "version_number": "'"$VERSION"'",
+      #       "changelog": "Automated release",
+      #       "dependencies": [],
+      #       "files": [
+      #         {
+      #           "url": "https://path-to-your-file/rapids-create-misc-modpack.mrpack",
+      #           "filename": "rapids-create-misc-modpack.mrpack"
+      #         }
+      #       ]
+      #     }'
