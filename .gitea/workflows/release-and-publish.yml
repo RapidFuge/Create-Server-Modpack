@@ -1,0 +1,86 @@
+name: Export and Publish Rapid's Create & Miscellaneous ModPack
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  export-and-publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Install jq
+        run: sudo apt-get update && sudo apt-get install -y jq
+
+      - name: Download packwiz binary
+        run: |
+          # Download the packwiz binary directly from the provided URL
+          curl -L -o packwiz https://github.com/walksanatora/HexxyTestPack/raw/main/packwiz/packwiz
+          chmod +x packwiz
+          sudo mv packwiz /usr/local/bin/packwiz
+
+      - name: Extract version from pack.toml
+        id: extract_version
+        run: |
+          version=$(grep '^version' pack.toml | cut -d '"' -f2)
+          echo "VERSION=$version" >> $GITHUB_ENV
+
+      - name: Check if release exists
+        id: check_release
+        env:
+          GITEA_TOKEN: ${{ secrets.GITEA_TOKEN }}
+          VERSION: ${{ steps.extract_version.outputs.VERSION }}
+        run: |
+          response=$(curl -s -H "Authorization: token $GITEA_TOKEN" "https://git.rapidfuge.xyz/api/v1/repos/RapidFuge/Create-Server-Modpack/releases/tags/v$VERSION")
+          if [[ $(echo $response | jq -r '.message') == "The target couldn'\''t be found." ]]; then
+            echo "release_exists=false" >> $GITHUB_ENV
+          else
+            echo "release_exists=true" >> $GITHUB_ENV
+          fi
+
+      - name: Create release in Gitea
+        if: env.release_exists == 'false'
+        id: create_release
+        env:
+          GITEA_TOKEN: ${{ secrets.GITEA_TOKEN }}
+          VERSION: ${{ steps.extract_version.outputs.VERSION }}
+        run: |
+          release_data=$(jq -n --arg tag "v${VERSION}" --arg name "Rapid's Create & Miscellaneous ModPack v${VERSION}" '{"tag_name":$tag,"name":$name,"body":"Automated release"}')
+          response=$(curl -s -X POST "https://git.rapidfuge.xyz/api/v1/repos/RapidFuge/Create-Server-Modpack/releases" -H "Content-Type: application/json" -H "Authorization: token $GITEA_TOKEN" -d "$release_data")
+          echo $response | jq -r '.id' > release_id.txt
+
+      - name: Upload .mrpack file to Gitea release
+        if: env.release_exists == 'false'
+        env:
+          GITEA_TOKEN: ${{ secrets.GITEA_TOKEN }}
+        run: |
+          release_id=$(cat release_id.txt)
+          curl -X POST "https://git.rapidfuge.xyz/api/v1/repos/RapidFuge/Create-Server-Modpack/releases/$release_id/assets?name=rapids-create-misc-modpack.mrpack" \
+          -H "Authorization: token $GITEA_TOKEN" \
+          -F "file=@rapids-create-misc-modpack.mrpack"
+
+    # - name: Upload to Modrinth
+    #   if: env.release_exists == 'false'
+    #   env:
+    #     MODRINTH_TOKEN: ${{ secrets.MODRINTH_TOKEN }}
+    #     VERSION: ${{ steps.extract_version.outputs.VERSION }}
+    #   run: |
+    #     curl -X POST https://api.modrinth.com/v2/version \
+    #     -H "Authorization: Bearer $MODRINTH_TOKEN" \
+    #     -H "Content-Type: application/json" \
+    #     -d '{
+    #       "name": "Rapid'\''s Create & Miscellaneous ModPack - '"$VERSION"'",
+    #       "version_number": "'"$VERSION"'",
+    #       "changelog": "Automated release",
+    #       "dependencies": [],
+    #       "files": [
+    #         {
+    #           "url": "https://path-to-your-file/rapids-create-misc-modpack.mrpack",
+    #           "filename": "rapids-create-misc-modpack.mrpack"
+    #         }
+    #       ]
+    #     }'
