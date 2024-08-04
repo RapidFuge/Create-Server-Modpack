@@ -40,13 +40,19 @@ jobs:
             echo "release_exists=true" >> $GITHUB_ENV
           fi
 
-      - name: Download packwiz binary
+      - name: Install Go
         if: env.release_exists == 'false'
         run: |
-          # Download the packwiz binary directly from the provided URL
-          curl -L -o packwiz https://github.com/walksanatora/HexxyTestPack/raw/main/packwiz/packwiz
-          chmod +x packwiz
-          sudo mv packwiz /usr/local/bin/packwiz
+          wget https://go.dev/dl/go1.19.6.linux-amd64.tar.gz
+          sudo tar -C /usr/local -xzf go1.19.6.linux-amd64.tar.gz
+          echo "export PATH=$PATH:/usr/local/go/bin" >> $GITHUB_ENV
+
+      - name: Install packwiz
+        if: env.release_exists == 'false'
+        run: |
+          export PATH=$PATH:/usr/local/go/bin
+          go install github.com/packwiz/packwiz@latest
+          echo "export PATH=$PATH:$(go env GOPATH)/bin" >> $GITHUB_ENV
 
       - name: Export modpack to Modrinth
         if: env.release_exists == 'false'
