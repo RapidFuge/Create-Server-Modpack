@@ -45,14 +45,14 @@ jobs:
         run: |
           wget https://go.dev/dl/go1.19.6.linux-amd64.tar.gz
           sudo tar -C /usr/local -xzf go1.19.6.linux-amd64.tar.gz
-          echo "export PATH=$PATH:/usr/local/go/bin" >> $GITHUB_ENV
+          echo "/usr/local/go/bin" >> $GITHUB_PATH
 
       - name: Install packwiz
         if: env.release_exists == 'false'
         run: |
           export PATH=$PATH:/usr/local/go/bin
           go install github.com/packwiz/packwiz@latest
-          echo "export PATH=$PATH:$(go env GOPATH)/bin" >> $GITHUB_ENV
+          echo "$(go env GOPATH)/bin" >> $GITHUB_PATH
 
       - name: Export modpack to Modrinth
         if: env.release_exists == 'false'
