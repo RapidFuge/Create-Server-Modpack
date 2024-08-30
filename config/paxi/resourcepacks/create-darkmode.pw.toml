@@ -1,13 +1,13 @@
 name = "Create Darkmode"
-filename = "Legacy_0.5_Create_Darkmode_v0.0.1.zip"
+filename = "Create_Darkmode_v0.0.2.zip"
 side = "client"
 
 [download]
-url = "https://cdn.modrinth.com/data/QTqrHaYC/versions/TNSyG5eU/Legacy_0.5_Create_Darkmode_v0.0.1.zip"
+url = "https://cdn.modrinth.com/data/QTqrHaYC/versions/wjKUN0fP/Create_Darkmode_v0.0.2.zip"
 hash-format = "sha1"
-hash = "b8779bdc4fc43af1b0d0cf49f4ec1d3fa9c2c6f4"
+hash = "28ff5f8ad3f678ae4314c00ba964943e8ccc8ffb"
 
 [update]
 [update.modrinth]
 mod-id = "QTqrHaYC"
-version = "TNSyG5eU"
+version = "wjKUN0fP"

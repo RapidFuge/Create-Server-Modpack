@@ -1,13 +1,13 @@
 name = "Simple Quarry"
-filename = "SimpleQuarry-1.19.2-19.2.1.jar"
+filename = "SimpleQuarry-1.20.1-20.1.6.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/s3lgCbLg/versions/DGI8ZBCk/SimpleQuarry-1.19.2-19.2.1.jar"
-hash-format = "sha1"
-hash = "5416273dda06ff47a31872565d857819da2a6fc6"
+url = "https://cdn.modrinth.com/data/s3lgCbLg/versions/tLDx8Cw8/SimpleQuarry-1.20.1-20.1.6.jar"
+hash-format = "sha512"
+hash = "c4162299ad341a4193fbe85e1a77c1af6ffbce1e6a3f86866e06881920c800a6f8749d55056bc2f6128d6c917534dc3bcd6ee559cd48339c8f17d9bfbb5a3812"
 
 [update]
 [update.modrinth]
 mod-id = "s3lgCbLg"
-version = "DGI8ZBCk"
+version = "tLDx8Cw8"

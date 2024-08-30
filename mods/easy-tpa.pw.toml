@@ -1,13 +1,13 @@
 name = "TPA"
-filename = "tpa-1.4.1-1.19.2.jar"
+filename = "tpa-1.6.0.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/pbGzLSUN/versions/C4oW0Hrz/tpa-1.4.1-1.19.2.jar"
+url = "https://cdn.modrinth.com/data/pbGzLSUN/versions/235mY5FF/tpa-1.6.0.jar"
 hash-format = "sha1"
-hash = "d606ad2fac12bcc87380b0bbbe05a8a228b75ccd"
+hash = "8dfafa9ca71d2ae9f707f26593170b3452219e77"
 
 [update]
 [update.modrinth]
 mod-id = "pbGzLSUN"
-version = "C4oW0Hrz"
+version = "235mY5FF"

@@ -5,11 +5,16 @@ A small modpack I made because I was bored and Create is awesome.
 I recommend a good enough processor to handle the server and AT MINIMUM 5GB of ram allocated to the server.
 I also recommend using a shader. [Complementary Shaders - Reimagined](https://modrinth.com/shader/complementary-reimagined) is a good shader that I recommend.
 
-Step 1: Create a Latest version Forge 1.19.2 Instance<br>
+Step 1: Create a Latest version Forge 1.20.1 Instance<br>
 Step 2: Download [Packwiz Installer](https://github.com/packwiz/packwiz-installer-bootstrap/releases) and place it on you instance folder.<br>
 Step 3: Edit Instance -> Settings -> Custom Commands, Check the Custom Commands checkbox and paste this in the pre-launch command textbox <code>"$INST_JAVA" -jar $INST_DIR/packwiz-installer-bootstrap.jar https://git.rapidfuge.xyz/RapidFuge/Create-Server-Modpack/raw/branch/main/pack.toml</code><br>
 Step 2: Press launch and profit.<br>
 Step 3: Use this docker-compose to easily start a minecraft server.<br>
+
+> [!NOTE]
+> Temporarily removed mods due to no 1.20.1 Ports.<br>
+>
+> - Create: Sandpaper Overhaul<br>
 
 ```yaml
 version: "3.8"
@@ -25,7 +30,7 @@ services:
       MEMORY: 4G
       EULA: "TRUE"
       TYPE: "FORGE"
-      VERSION: 1.19.2
+      VERSION: 1.20.1
       FORGE_VERSION: latest
       MOTD: "Rapid's Create & Miscellaneous Server"
       ENABLE_WHITELIST: true

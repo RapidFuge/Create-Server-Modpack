@@ -1,13 +1,13 @@
 name = "Netherite But Cheaper"
-filename = "nbc-1.0.jar"
+filename = "nbc-all-2.0-1.20+.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/hQNz0rXp/versions/JbH1mkL5/nbc-1.0.jar"
+url = "https://cdn.modrinth.com/data/hQNz0rXp/versions/dpLjGp7N/nbc-all-2.0-1.20%2B.jar"
 hash-format = "sha1"
-hash = "254cd35fb41b5cc8ba7b323bb4967d3e3c623e58"
+hash = "4c202f1671783e7a85752bfbac0f01ad13f41667"
 
 [update]
 [update.modrinth]
 mod-id = "hQNz0rXp"
-version = "JbH1mkL5"
+version = "dpLjGp7N"
