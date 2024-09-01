@@ -1,0 +1,13 @@
+name = "TPA++"
+filename = "superricky-1.6.0-1.20.x-RELEASE-CANDIDATE-1.jar"
+side = "server"
+
+[download]
+url = "https://cdn.modrinth.com/data/QuPbmyCQ/versions/mMuGsYkx/superricky-1.6.0-1.20.x-RELEASE-CANDIDATE-1.jar"
+hash-format = "sha512"
+hash = "c6bfb1fa9add4df2c9f9f2c435ce6f298167a0f94f302ff94f0463d772b76c28652660b7dfb8071d058eafcf981e36fc2d6c6fc330c58ef3c7b3ed6ece7489b4"
+
+[update]
+[update.modrinth]
+mod-id = "QuPbmyCQ"
+version = "mMuGsYkx"

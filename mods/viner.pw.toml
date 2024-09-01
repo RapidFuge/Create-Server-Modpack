@@ -1,0 +1,13 @@
+name = "Viner"
+filename = "viner-2.2.1.jar"
+side = "server"
+
+[download]
+url = "https://cdn.modrinth.com/data/pJWTXnch/versions/WxKvG9ig/viner-2.2.1.jar"
+hash-format = "sha512"
+hash = "4a581ca0bf9f47fc7759343f6f89e5727ddd87f37779e80e27e4fdf842569eab531b5de8b0bd2a2a9edd45da9101be83ce67e4e2e626d2ec8945f21439bcadd6"
+
+[update]
+[update.modrinth]
+mod-id = "pJWTXnch"
+version = "WxKvG9ig"

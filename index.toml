@@ -71,7 +71,7 @@ metafile = true
 
 [[files]]
 file = "mods/architectury-api.pw.toml"
-hash = "8a27a482bf7dbf9b8a96fe9a3e8bf8e08ca1d376c6cf13bccf49f0d5191d56fa"
+hash = "4e81241ba2da06f425efc5e09fb6b38470125c1581c39e1310c5843a0b96ec76"
 metafile = true
 
 [[files]]
@@ -252,11 +252,6 @@ metafile = true
 [[files]]
 file = "mods/dynamic-village.pw.toml"
 hash = "f052b01939455f3c99653719e0a30c3273617e1d49e580689adcdc09e1a755ef"
-metafile = true
-
-[[files]]
-file = "mods/easy-tpa.pw.toml"
-hash = "6c0f0e6e7d0daab348f1c556eb4652d21c1df3653c942c949165aabb38bb27e7"
 metafile = true
 
 [[files]]
@@ -480,6 +475,11 @@ hash = "dcef73437fec1a74a88df117d55f379860090b4e5dd73d0c19f7874e61cc6bd3"
 metafile = true
 
 [[files]]
+file = "mods/tpa++.pw.toml"
+hash = "df19e7678541dd8387038b294b5f5e65b979a03d136e17c92fd3dd01f22d0e65"
+metafile = true
+
+[[files]]
 file = "mods/trackwork.pw.toml"
 hash = "8deda3bd6e624e01a1d31187855e5c8bc5a8f1852a35a7ddf18c903921344d65"
 metafile = true
@@ -500,8 +500,8 @@ hash = "d0b9e330714c613ba207842facd66054188ad4cb60538f455487a8ca04d1b82a"
 metafile = true
 
 [[files]]
-file = "mods/veinminer.pw.toml"
-hash = "1e7c52e8200d178f66c84026d54dccf0fe75f862b725088325672049c336caca"
+file = "mods/viner.pw.toml"
+hash = "c4941186d66cdc55b8430da3fa77e2c33ab099d5c3f8ddb2e59527a18e590e75"
 metafile = true
 
 [[files]]
