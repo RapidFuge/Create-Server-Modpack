@@ -1,6 +1,6 @@
 name = "Viner"
 filename = "viner-2.2.1.jar"
-side = "server"
+side = "both"
 
 [download]
 url = "https://cdn.modrinth.com/data/pJWTXnch/versions/WxKvG9ig/viner-2.2.1.jar"
