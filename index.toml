@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "config/paxi/datapacks/ibo.pw.toml"
-hash = "f7a5aac920c7f4535ce131c81d6c08f3e4cd6ba0e470633c2b4c8189ca0aaaee"
+hash = "b281113d00e504e9eb50a7941306dfce075cb60749189600f5344e9a514b27dd"
 metafile = true
 
 [[files]]
@@ -63,6 +63,10 @@ metafile = true
 [[files]]
 file = "config/squarry.cfg"
 hash = "f0ae3d70cfffe99d50c13bdf085821e192419c3c1dfdd61f53d2d5f14d3ce694"
+
+[[files]]
+file = "config/viner-common.toml"
+hash = "331310c0009012082d109ce8a5bdf332213a2d99b0c9c335b7f70d9490fa698f"
 
 [[files]]
 file = "mods/almost-unified.pw.toml"
@@ -516,7 +520,7 @@ metafile = true
 
 [[files]]
 file = "mods/viner.pw.toml"
-hash = "c4941186d66cdc55b8430da3fa77e2c33ab099d5c3f8ddb2e59527a18e590e75"
+hash = "2c5b4d1aad9e3a838c82705a90fef9fdb8f45716ceae4649da2559c3c90ef4cc"
 metafile = true
 
 [[files]]
