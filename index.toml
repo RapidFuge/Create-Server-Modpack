@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "config/paxi/datapacks/ibo.pw.toml"
-hash = "b281113d00e504e9eb50a7941306dfce075cb60749189600f5344e9a514b27dd"
+hash = "69dd3ce93a417ad51a30e1b4351088cf06bd5d4a3a6b66dbe505731468e69573"
 metafile = true
 
 [[files]]

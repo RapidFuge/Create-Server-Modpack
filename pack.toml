@@ -1,12 +1,12 @@
 name = "Rapid's Create & Miscellaneous ModPack"
 author = "RapidFuge"
-version = "1.3.3"
+version = "1.3.4"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "3b7a301f94d57df56c90fe1417c1563b0bb96861c4ae4f2b9abc5acfb8446cc2"
+hash = "cfe3119180eb3869a11738dc1686b5063d429c903c588a1fd65534d66ef22388"
 
 [versions]
 forge = "47.3.7"
