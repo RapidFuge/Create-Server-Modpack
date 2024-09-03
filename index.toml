@@ -189,6 +189,11 @@ hash = "85c58f1343f94ffbf510922ada6b2d3ff9ca323eb98eaeeff2237a5d5e342d87"
 metafile = true
 
 [[files]]
+file = "mods/create-northstar.pw.toml"
+hash = "d58a5d14fb74bb823416938acb08d4d1a046565dd452b26351b4b1b220bc6a78"
+metafile = true
+
+[[files]]
 file = "mods/create-power-loader.pw.toml"
 hash = "c6986341022a2e7dac13d39f85e2e93d5960e2f84a3e43c5bc83a98ad378f363"
 metafile = true
