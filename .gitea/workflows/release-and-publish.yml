@@ -59,28 +59,15 @@ jobs:
         run: |
           packwiz modrinth export -o rapids-create-misc-modpack.mrpack
 
-      - name: Create release in Gitea
+      - name: Create release and upload .mrpack file
         if: env.release_exists == 'false'
-        id: create_release
-        env:
-          GITEA_TOKEN: ${{ secrets.GITEA_TOKEN }}
-          VERSION: ${{ env.VERSION }}
-        run: |
-          echo "Creating release for version: $VERSION" # Debug output
-          release_data=$(jq -n --arg tag "v${VERSION}" --arg name "Rapid's Create & Miscellaneous ModPack v${VERSION}" '{"tag_name":$tag,"name":$name,"body":"Automated release"}')
-          response=$(curl -s -X POST "https://git.rapidfuge.xyz/api/v1/repos/RapidFuge/Create-Server-Modpack/releases" -H "Content-Type: application/json" -H "Authorization: token $GITEA_TOKEN" -d "$release_data")
-          echo $response | jq -r '.id' > release_id.txt
-
-      - name: Upload .mrpack file to Gitea release
-        if: env.release_exists == 'false'
-        env:
-          GITEA_TOKEN: ${{ secrets.GITEA_TOKEN }}
-        run: |
-          release_id=$(cat release_id.txt)
-          echo "Uploading .mrpack file to release ID: $release_id" # Debug output
-          curl -X POST "https://git.rapidfuge.xyz/api/v1/repos/RapidFuge/Create-Server-Modpack/releases/$release_id/assets?name=rapids-create-misc-modpack.mrpack" \
-          -H "Authorization: token $GITEA_TOKEN" \
-          -F "file=@rapids-create-misc-modpack.mrpack"
+        uses: akkuman/gitea-release-action@v1
+        with:
+          tag_name: "v${{ env.VERSION }}"
+          name: "Rapid's Create & Miscellaneous ModPack v${{ env.VERSION }}"
+          token: ${{ secrets.GITEA_TOKEN }}
+          files: |
+            rapids-create-misc-modpack.mrpack
 
       # - name: Upload to Modrinth
       #   env:

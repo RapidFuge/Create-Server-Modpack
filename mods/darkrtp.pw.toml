@@ -1,0 +1,13 @@
+name = "DarkRTP"
+filename = "darkrtp-forge-1.20.1-1.0.9.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/FWdh93Ig/versions/mlrtzeva/darkrtp-forge-1.20.1-1.0.9.jar"
+hash-format = "sha512"
+hash = "0d2f55d186e13e27aacd39f313519fd28c65a2b1a24250db4ddf012f1d96fa70af57df204fc15a433f6c2ed6a388fb91e94fba06e1efc6a41acbf6bdc43b8404"
+
+[update]
+[update.modrinth]
+mod-id = "FWdh93Ig"
+version = "mlrtzeva"

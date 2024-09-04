@@ -249,6 +249,11 @@ hash = "d25ada163cbf92d6e8ad0532dd865e3be566a6302a190b849d3741bda318b012"
 metafile = true
 
 [[files]]
+file = "mods/darkrtp.pw.toml"
+hash = "030d9f0383117528f0b3fe9c237626f300f53c1ef2f9473de898fa698f030d49"
+metafile = true
+
+[[files]]
 file = "mods/double-doors.pw.toml"
 hash = "0bfa93d487f91b526d83622245091b3fec1d27c1b5b241b75bb26ea8e04806a8"
 metafile = true
