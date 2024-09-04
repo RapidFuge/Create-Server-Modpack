@@ -154,6 +154,11 @@ hash = "0053ef8e3e37e5769df2c9990d55b25628b3c8c6c8249a091761d30e77dc9eb6"
 metafile = true
 
 [[files]]
+file = "mods/create-dreams-and-desires.pw.toml"
+hash = "23dc3517bb479f4a7275bedc75ea45362aef0ff1b240d8cd0fde2fd152032cdf"
+metafile = true
+
+[[files]]
 file = "mods/create-enchantable-machinery.pw.toml"
 hash = "6d140b7df702692a50664379d0980185307adf23cb96ec18d7631bcd936a16a9"
 metafile = true
