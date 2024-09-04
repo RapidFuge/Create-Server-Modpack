@@ -61,11 +61,11 @@ jobs:
 
       - name: Create release and upload .mrpack file
         if: env.release_exists == 'false'
-        uses: akkuman/gitea-release-action@v1
+        uses: https://gitea.com/actions/release-action@main
         with:
-          tag_name: "v${{ env.VERSION }}"
-          name: "Rapid's Create & Miscellaneous ModPack v${{ env.VERSION }}"
-          token: ${{ secrets.GITEA_TOKEN }}
+          # tag_name: "v${{ env.VERSION }}"
+          title: "Rapid's Create & Miscellaneous ModPack v${{ env.VERSION }}"
+          # api_key: ${{ secrets.GITEA_TOKEN }}
           files: |
             rapids-create-misc-modpack.mrpack
 
