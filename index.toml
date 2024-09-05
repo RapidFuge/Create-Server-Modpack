@@ -41,6 +41,11 @@ hash = "47b3c66cbe4a72fe88ccbbd6ee31ce2aac331db487c899c6b494878c96833914"
 metafile = true
 
 [[files]]
+file = "config/paxi/datapacks/repurposed-structures-farmers-delight-compat.pw.toml"
+hash = "2271ae5c97d5579243411cc3269acd76cf78e807ff6f9f00e20440bcae8042db"
+metafile = true
+
+[[files]]
 file = "config/paxi/resourcepacks/create-darkmode.pw.toml"
 hash = "9730e890d29a8549c887b8a3de6971d272539ab540055008725d1369a483ab1d"
 metafile = true
@@ -254,6 +259,11 @@ hash = "d25ada163cbf92d6e8ad0532dd865e3be566a6302a190b849d3741bda318b012"
 metafile = true
 
 [[files]]
+file = "mods/ctov-farmers-delight-compat.pw.toml"
+hash = "ec327ba7471215f9816ab868a11a1eab1cc5361458528b06eb666677b77bb3c8"
+metafile = true
+
+[[files]]
 file = "mods/darkrtp.pw.toml"
 hash = "030d9f0383117528f0b3fe9c237626f300f53c1ef2f9473de898fa698f030d49"
 metafile = true
@@ -296,6 +306,11 @@ metafile = true
 [[files]]
 file = "mods/extra-disks.pw.toml"
 hash = "d95b1f3369c96151b078a785f770cdae6a9e396563e278c7af40fff262462473"
+metafile = true
+
+[[files]]
+file = "mods/farmers-delight.pw.toml"
+hash = "e57fdbd46e93be972ecdb79212804f32a8337eb830eaa0decd2b19496618deec"
 metafile = true
 
 [[files]]
@@ -486,6 +501,11 @@ metafile = true
 [[files]]
 file = "mods/simple-quarry.pw.toml"
 hash = "e9e218427240f67a4dd3a436bdecc63c09663e952fe3613ecd29e41cd84fef6d"
+metafile = true
+
+[[files]]
+file = "mods/slice-and-dice.pw.toml"
+hash = "76b8ea2be70c0362bf966665e906b90e8a50d71d44f7e02d4df50c8545bdb4f5"
 metafile = true
 
 [[files]]
