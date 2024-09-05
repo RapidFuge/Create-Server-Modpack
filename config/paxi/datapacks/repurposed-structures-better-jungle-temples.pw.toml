@@ -1,6 +1,6 @@
 name = "Repurposed Structures - Better Jungle Temples Compat"
 filename = "Repurposed_Structures-Better_Jungle_Temples_v6.zip"
-side = "both"
+side = "server"
 
 [download]
 url = "https://cdn.modrinth.com/data/gAvG8ZeC/versions/iegdS5oG/Repurposed_Structures-Better_Jungle_Temples_v6.zip"

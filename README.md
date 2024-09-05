@@ -11,6 +11,9 @@ Step 3: Edit Instance -> Settings -> Custom Commands, Check the Custom Commands 
 Step 2: Press launch and profit.<br>
 Step 3: Use this docker-compose to easily start a minecraft server.<br>
 
+> [!WARNING]
+> This modpack was made to be hosted by a server and not meant for singleplayer!
+
 > [!NOTE]
 > Temporarily removed mods due to no 1.20.1 Ports.<br>
 >

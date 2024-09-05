@@ -1,6 +1,6 @@
 name = "Repurposed Structures - Better Strongholds Compat"
 filename = "Repurposed_Structures-Better_Strongholds_v5.zip"
-side = "both"
+side = "server"
 
 [download]
 url = "https://cdn.modrinth.com/data/uJ0YMl4f/versions/Mk16m8e6/Repurposed_Structures-Better_Strongholds_v5.zip"
