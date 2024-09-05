@@ -1,0 +1,13 @@
+name = "Create Easy Villagers Textures"
+filename = "CreateEasyVillager_v1.0.1a.zip"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/3Ys5tyU3/versions/R3MWY9SX/CreateEasyVillager_v1.0.1a.zip"
+hash-format = "sha512"
+hash = "456fc9db6e579daf71ca5d6c7340fe026f7710d471608c796c8fb46247b0a711a674e2b8332eaa0d734aa43a0c473dc7c5f376d9ea7e5d118e6bea26fc21c5f2"
+
+[update]
+[update.modrinth]
+mod-id = "3Ys5tyU3"
+version = "R3MWY9SX"

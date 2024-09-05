@@ -1,0 +1,13 @@
+name = "Create: New Age Retexture"
+filename = "Create New Age Retexture.zip"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/9fYTRFXX/versions/YhHt77AV/Create%20New%20Age%20Retexture.zip"
+hash-format = "sha512"
+hash = "111fa7c9b0a65913b6e8b8c276f36dce23d9c9ccc1e607ad4721b064310b301161e952375d170d4c208eaaaa5beea30d6f68b114e4a09e235479ea6971ca10c2"
+
+[update]
+[update.modrinth]
+mod-id = "9fYTRFXX"
+version = "YhHt77AV"
