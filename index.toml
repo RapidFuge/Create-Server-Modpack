@@ -51,6 +51,16 @@ hash = "9730e890d29a8549c887b8a3de6971d272539ab540055008725d1369a483ab1d"
 metafile = true
 
 [[files]]
+file = "config/paxi/resourcepacks/create-easy-villagers-textures.pw.toml"
+hash = "0f6dc55453e2132fa0c99b6ee856263db3b0dca3e8a915d1f0a8f7caabe0b428"
+metafile = true
+
+[[files]]
+file = "config/paxi/resourcepacks/create-new-age-retexture.pw.toml"
+hash = "3057c06edeb5eab2092aeab1abc0c123b9f37bad6656f6feaefe0508b5710116"
+metafile = true
+
+[[files]]
 file = "config/paxi/resourcepacks/create-storage.pw.toml"
 hash = "1be3bbc5b5406e0d1f3810c120630e8e2ad5c9bcb766666dc0e7f773b914a7fc"
 metafile = true
@@ -71,7 +81,7 @@ hash = "f0ae3d70cfffe99d50c13bdf085821e192419c3c1dfdd61f53d2d5f14d3ce694"
 
 [[files]]
 file = "config/viner-common.toml"
-hash = "331310c0009012082d109ce8a5bdf332213a2d99b0c9c335b7f70d9490fa698f"
+hash = "311c16ae74c603cf185d42e4701316bc2e534ffa25d3fb121293da19be3d2bd0"
 
 [[files]]
 file = "mods/almost-unified.pw.toml"
@@ -91,6 +101,11 @@ metafile = true
 [[files]]
 file = "mods/bellsandwhistles.pw.toml"
 hash = "7df217b7efc8732751ed1bd0fbd167ea3a75ecca05a92d76b14e6c614236cb57"
+metafile = true
+
+[[files]]
+file = "mods/bobby-reforged.pw.toml"
+hash = "2a332a8963ab384a27f5257d38f9b78ad6d94f591dfd2eb14439d43abd5685da"
 metafile = true
 
 [[files]]
@@ -626,14 +641,4 @@ metafile = true
 [[files]]
 file = "mods/yungs-extras.pw.toml"
 hash = "eaa9678b7f6aee59266500c8d3fec01f7bce7c8fe5a0517747e9676cb0d2f1fc"
-metafile = true
-
-[[files]]
-file = "resourcepacks/create-easy-villagers-textures.pw.toml"
-hash = "0f6dc55453e2132fa0c99b6ee856263db3b0dca3e8a915d1f0a8f7caabe0b428"
-metafile = true
-
-[[files]]
-file = "resourcepacks/create-new-age-retexture.pw.toml"
-hash = "3057c06edeb5eab2092aeab1abc0c123b9f37bad6656f6feaefe0508b5710116"
 metafile = true

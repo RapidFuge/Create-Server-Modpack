@@ -1,7 +1,7 @@
 
 [viner]
 	#A 'true' or 'false' field to enable Shape Vine Mode.
-	shapeVine = true
+	shapeVine = false
 	#Amount of hunger added per block mined with vein mining.
 	#Range: 0.0 ~ 20.0
 	exhaustionPerBlock = 0.25
