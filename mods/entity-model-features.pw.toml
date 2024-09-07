@@ -1,0 +1,13 @@
+name = "[EMF] Entity Model Features"
+filename = "entity_model_features_forge_1.20.1-2.2.4.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/4I1XuqiY/versions/VXRadQci/entity_model_features_forge_1.20.1-2.2.4.jar"
+hash-format = "sha512"
+hash = "e70384e369080fb9572176a88c559d2be859638cd2abd2bd994e3ee96d42b1b9470cde88d875efe28c9e98f2649cb4726c5296c445da730ea6209918fc21d6ae"
+
+[update]
+[update.modrinth]
+mod-id = "4I1XuqiY"
+version = "VXRadQci"

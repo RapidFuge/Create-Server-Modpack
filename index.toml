@@ -309,6 +309,16 @@ hash = "5ec0c37f3f4ad07a40c10376668bca80334ddb7ad2bab06eb4de8f7aac339c8e"
 metafile = true
 
 [[files]]
+file = "mods/entity-model-features.pw.toml"
+hash = "37363929e2d31e2db6138f877dd88653198ef7a5773040085bdec559580076b1"
+metafile = true
+
+[[files]]
+file = "mods/entitytexturefeatures.pw.toml"
+hash = "e2da47de0a7c0dc5cde176ad02320c8bf101c1e0ba606f0428bc4d4bfe019bbf"
+metafile = true
+
+[[files]]
 file = "mods/explorers-compass.pw.toml"
 hash = "cf35640e350078e8cd7b29f727c3227aeb0b465f0fba9a266e6cbe15dadc4955"
 metafile = true
