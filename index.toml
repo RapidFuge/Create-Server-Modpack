@@ -194,6 +194,11 @@ hash = "a27da06b66efba38a7e44989ce1c9290482061fdd3cbf0855a0c82820c2b9440"
 metafile = true
 
 [[files]]
+file = "mods/create-jetpack.pw.toml"
+hash = "0ff2d89b4f6544be779edc232d5c723bb0d296e89fe66112168027dcd65715c9"
+metafile = true
+
+[[files]]
 file = "mods/create-mechanical-spawner.pw.toml"
 hash = "1a98c7a387e4abce54c773368cc4f6c8bc8db16d1bb8258a1ba6d8b316e25b43"
 metafile = true
