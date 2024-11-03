@@ -349,6 +349,11 @@ hash = "de63df967225278681e18afe0e323110322ec02006746980fbe77dbd974b20b3"
 metafile = true
 
 [[files]]
+file = "mods/forgematica.pw.toml"
+hash = "b07eb1a468072448635497c0b0f08bb16834cc161790625eddc9f995c0d77740"
+metafile = true
+
+[[files]]
 file = "mods/freecam.pw.toml"
 hash = "b6c95d8076985e66f59f0715f0cac8593dfac72acadbdb67a288f348a1c12a34"
 metafile = true
@@ -441,6 +446,11 @@ metafile = true
 [[files]]
 file = "mods/lootr.pw.toml"
 hash = "da63657599461e9c8141f45042bf1423aa96f80e9dca9260992bcc5871e6daaf"
+metafile = true
+
+[[files]]
+file = "mods/mafglib.pw.toml"
+hash = "9c4da7c2784ead3ef2486ec80417cbcedcf8d35a5176bccdbebb8469d60d5e7a"
 metafile = true
 
 [[files]]
