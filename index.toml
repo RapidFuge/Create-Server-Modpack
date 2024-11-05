@@ -349,11 +349,6 @@ hash = "de63df967225278681e18afe0e323110322ec02006746980fbe77dbd974b20b3"
 metafile = true
 
 [[files]]
-file = "mods/forgematica.pw.toml"
-hash = "b07eb1a468072448635497c0b0f08bb16834cc161790625eddc9f995c0d77740"
-metafile = true
-
-[[files]]
 file = "mods/freecam.pw.toml"
 hash = "b6c95d8076985e66f59f0715f0cac8593dfac72acadbdb67a288f348a1c12a34"
 metafile = true
