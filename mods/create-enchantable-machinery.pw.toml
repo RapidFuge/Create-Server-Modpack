@@ -1,13 +1,13 @@
 name = "Create: Enchantable Machinery"
-filename = "createenchantablemachinery-1.20.1-1.2.3.jar"
+filename = "createenchantablemachinery-forge-2.8.5-1.20.1.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/eqrvp4NK/versions/DNiydzeP/createenchantablemachinery-1.20.1-1.2.3.jar"
+url = "https://cdn.modrinth.com/data/eqrvp4NK/versions/p4zsYTxW/createenchantablemachinery-forge-2.8.5-1.20.1.jar"
 hash-format = "sha512"
-hash = "bd1739bdb14c5d772285380a0c3534170c5bc38cc051d3798e7d99bdccdc5397a8b053d48a3a84ac43be71a72b535974928bfd37a67def437cd0dbb179b95294"
+hash = "2eba9be7c04b4e48ec946c55d349fa5adcfd64f7fc138a3c0574429c61a4f2539beb53a007d01f92d70c2d1f7800cfdbd88dae172b627426559990d98e6aa8dd"
 
 [update]
 [update.modrinth]
 mod-id = "eqrvp4NK"
-version = "DNiydzeP"
+version = "p4zsYTxW"
