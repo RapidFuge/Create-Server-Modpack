@@ -7,7 +7,7 @@ I also recommend using a shader. [Complementary Shaders - Reimagined](https://mo
 
 Step 1: Create a Latest version Forge 1.20.1 Instance<br>
 Step 2: Download [Packwiz Installer](https://github.com/packwiz/packwiz-installer-bootstrap/releases) and place it on you instance folder.<br>
-Step 3: Edit Instance -> Settings -> Custom Commands, Check the Custom Commands checkbox and paste this in the pre-launch command textbox <code>"$INST_JAVA" -jar $INST_DIR/packwiz-installer-bootstrap.jar https://git.fuge.dev/RapidFuge/Create-Server-Modpack/~raw/main/pack.toml</code><br>
+Step 3: Edit Instance -> Settings -> Custom Commands, Check the Custom Commands checkbox and paste this in the pre-launch command textbox <code>"$INST_JAVA" -jar $INST_DIR/packwiz-installer-bootstrap.jar https://git.fuge.dev/Create-Server-Modpack/~raw/main/pack.toml</code><br>
 Step 2: Press launch and profit.<br>
 Step 3: Use this docker-compose to easily start a minecraft server.<br>
 
@@ -37,7 +37,7 @@ services:
       FORGE_VERSION: latest
       MOTD: "Rapid's Create & Miscellaneous Server"
       ENABLE_WHITELIST: true
-      PACKWIZ_URL: "https://git.fuge.dev/RapidFuge/Create-Server-Modpack/~raw/main/pack.toml"
+      PACKWIZ_URL: "https://git.fuge.dev/Create-Server-Modpack/~raw/main/pack.toml"
       # If you wish to use a whitelist in the server
       WHITELIST: |
         Playername
