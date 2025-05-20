@@ -1,0 +1,32 @@
+version: 39
+jobs:
+- name: Export and Publish
+  steps:
+  - !CheckoutStep
+    name: Checkout
+    cloneCredential: !DefaultCredential {}
+    withLfs: false
+    withSubmodules: false
+    condition: ALL_PREVIOUS_STEPS_WERE_SUCCESSFUL
+  - !CommandStep
+    name: Build
+    runInContainer: true
+    image: golang:latest
+    interpreter: !ShellInterpreter
+      shell: bash
+      commands: |
+        # Install Packwiz
+        go install github.com/packwiz/packwiz@@latest
+
+        # Build
+        packwiz modrinth export -o rapids-create-misc-modpack.mrpack
+    useTTY: true
+    condition: ALL_PREVIOUS_STEPS_WERE_SUCCESSFUL
+  - !PublishArtifactStep
+    name: Publish mrpack
+    artifacts: rapids-create-misc-modpack.mrpack
+    condition: ALL_PREVIOUS_STEPS_WERE_SUCCESSFUL
+  retryCondition: never
+  maxRetries: 3
+  retryDelay: 30
+  timeout: 14400
