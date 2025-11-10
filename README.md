@@ -5,19 +5,22 @@ A small modpack I made because I was bored and Create is awesome.
 I recommend a good enough processor to handle the server and AT MINIMUM 5GB of ram allocated to the server.
 I also recommend using a shader. [Complementary Shaders - Reimagined](https://modrinth.com/shader/complementary-reimagined) is a good shader that I recommend.
 
-Step 1: Create a Latest version Forge 1.20.1 Instance<br>
-Step 2: Download [Packwiz Installer](https://github.com/packwiz/packwiz-installer-bootstrap/releases) and place it on you instance folder.<br>
-Step 3: Edit Instance -> Settings -> Custom Commands, Check the Custom Commands checkbox and paste this in the pre-launch command textbox <code>"$INST_JAVA" -jar $INST_DIR/packwiz-installer-bootstrap.jar https://git.fuge.dev/Create-Server-Modpack/~raw/main/pack.toml</code><br>
-Step 2: Press launch and profit.<br>
-Step 3: Use this docker-compose to easily start a minecraft server.<br>
+Step 1: Create a Latest version Forge 1.20.1 Instance<br />
+Step 2: Download [Packwiz Installer](https://github.com/packwiz/packwiz-installer-bootstrap/releases) and place it on you instance folder.<br />
+Step 3: Edit Instance -> Settings -> Custom Commands, Check the Custom Commands checkbox and paste this in the pre-launch command textbox <code>"$INST_JAVA" -jar $INST_DIR/packwiz-installer-bootstrap.jar https://git.fuge.dev/Create-Server-Modpack/~raw/main/pack.toml</code><br />
+Step 2: Press launch and profit.<br />
+Step 3: Use this docker-compose to easily start a minecraft server.<br/ >
 
 > [!WARNING]
 > This modpack was made to be hosted by a server and not meant for singleplayer!
 
 > [!NOTE]
-> Temporarily removed mods due to no 1.20.1 Ports.<br>
+> Temporarily removed mods due to no 1.20.1 Ports or no Create 6 verion.<br />
 >
-> - Create: Sandpaper Overhaul<br>
+> Create: Dreams & Desires
+> Create: Crystal Clear
+> Create: Clockwork & Valkyrien Skies & VS Tournament & Trackwork
+> Create: The Factory Must Grow <br />
 
 ```yaml
 version: "3.8"

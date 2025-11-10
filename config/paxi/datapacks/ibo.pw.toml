@@ -1,13 +1,13 @@
 name = "Incendium Biomes Only"
-filename = "ibo-2.1.0+forge+1.19.3.jar"
+filename = "ibo-3.0.0-forge-1.19.3.jar"
 side = "server"
 
 [download]
-url = "https://cdn.modrinth.com/data/gmUU3UdW/versions/yBdYy0U0/ibo-2.1.0%2Bforge%2B1.19.3.jar"
-hash-format = "sha1"
-hash = "38f6da6d8f1c46f7597032b134b4dfcd4a1858ef"
+url = "https://cdn.modrinth.com/data/gmUU3UdW/versions/V33qtoDb/ibo-3.0.0-forge-1.19.3.jar"
+hash-format = "sha512"
+hash = "92af38fe7a658f14a465759397e165568c99c6203046000f23bdaecd22093643f7046ef7d0b9380a71c2d2117a7fcb5af9b489edf9095643f1743d2131db765e"
 
 [update]
 [update.modrinth]
 mod-id = "gmUU3UdW"
-version = "yBdYy0U0"
+version = "V33qtoDb"
