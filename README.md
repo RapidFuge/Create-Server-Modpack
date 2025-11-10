@@ -17,10 +17,10 @@ Step 3: Use this docker-compose to easily start a minecraft server.<br/ >
 > [!NOTE]
 > Temporarily removed mods due to no 1.20.1 Ports or no Create 6 verion.<br />
 >
-> Create: Dreams & Desires
-> Create: Crystal Clear
-> Create: Clockwork & Valkyrien Skies & VS Tournament & Trackwork
-> Create: The Factory Must Grow <br />
+> - Create: Dreams & Desires
+> - Create: Crystal Clear
+> - Create: Clockwork & Valkyrien Skies & VS Tournament & Trackwork
+> - Create: The Factory Must Grow <br />
 
 ```yaml
 version: "3.8"
