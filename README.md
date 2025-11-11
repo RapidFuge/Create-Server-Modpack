@@ -9,17 +9,20 @@ Step 1: Create a Latest version Forge 1.20.1 Instance<br />
 Step 2: Download [Packwiz Installer](https://github.com/packwiz/packwiz-installer-bootstrap/releases) and place it on you instance folder.<br />
 Step 3: Edit Instance -> Settings -> Custom Commands, Check the Custom Commands checkbox and paste this in the pre-launch command textbox <code>"$INST_JAVA" -jar $INST_DIR/packwiz-installer-bootstrap.jar https://raw.githubusercontent.com/RapidFuge/Create-Server-Modpack/refs/heads/main/pack.toml</code><br />
 Step 2: Press launch and profit.<br />
-Step 3: Use this docker-compose to easily start a minecraft server.<br/ >
+Step 3: Use this docker-compose to easily start a minecraft server. <br />
 
 > [!WARNING]
 > This modpack was made to be hosted by a server and not meant for singleplayer!
 
 > [!NOTE]
-> Temporarily removed mods due to no 1.20.1 Ports or no Create 6 verion.<br />
+> Temporarily removed mods due to no 1.20.1 Ports or no Create 6 version. <br />
 >
 > - Create: Dreams & Desires
 > - Create: Crystal Clear
-> - Create: Clockwork & Valkyrien Skies & VS Tournament & Trackwork
+> - Create: Clockwork
+> - Valkyrien Skies
+> - VS Tournament
+> - Trackwork
 > - Create: The Factory Must Grow <br />
 
 ```yaml
