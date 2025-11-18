@@ -2,4 +2,6 @@ README.md
 .gitignore
 .gitattributes
 .gitea/
+.github/
 CNAME
+.onedev-buildspec.yml
